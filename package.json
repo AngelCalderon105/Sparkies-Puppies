@@ -1,0 +1,23 @@
+{
+  "name": "calderon-bulldogs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelCalderon105/Calderon-Bulldogs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngelCalderon105/Calderon-Bulldogs/issues"
+  },
+  "homepage": "https://github.com/AngelCalderon105/Calderon-Bulldogs#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
