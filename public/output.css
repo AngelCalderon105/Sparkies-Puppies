@@ -756,6 +756,10 @@ video {
     margin-top: 3rem;
   }
 
+  .md\:block{
+    display: block;
+  }
+
   .md\:flex{
     display: flex;
   }
