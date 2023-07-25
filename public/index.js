@@ -16,7 +16,7 @@ burger.addEventListener('click', () => {
 
        
     } else {
-        if (window.pageYOffset > offsetHeight) {
+        if (window.scrollY > offsetHeight) {
             navbar.classList.add('bg-white');
             navbar.classList.remove('text-primary-white');
             navbar.classList.add('text-primary-black');
@@ -42,7 +42,7 @@ burger.addEventListener('click', () => {
 
 window.addEventListener('scroll', function() {
 
-    if (window.pageYOffset > offsetHeight) {
+    if (window.scrollY > offsetHeight) {
         logo.classList.remove('hidden');
         logo.classList.add('inline-block');
 
