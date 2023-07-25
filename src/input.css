@@ -7,11 +7,11 @@
     background-image: url("img/home_Background.jpg");
 }
 
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     #home {
         background-image: url("img/mobile_background.jpg");
     }
-} */
+}
 
 
 @supports (-webkit-touch-callout: none) {

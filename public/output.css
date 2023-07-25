@@ -568,8 +568,20 @@ video {
   width: 100%;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
+.items-end{
+  align-items: flex-end;
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-start{
+  justify-content: flex-start;
 }
 
 .justify-center{
@@ -647,6 +659,21 @@ video {
   line-height: 1.75rem;
 }
 
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-primary-black{
   --tw-text-opacity: 1;
   color: rgb(33 37 41 / var(--tw-text-opacity));
@@ -666,11 +693,11 @@ video {
   background-image: url("img/home_Background.jpg");
 }
 
-/* @media only screen and (max-width: 768px) {
-    #home {
-        background-image: url("img/mobile_background.jpg");
-    }
-} */
+@media only screen and (max-width: 768px) {
+  #home {
+    background-image: url("img/mobile_background.jpg");
+  }
+}
 
 @supports (-webkit-touch-callout: none) {
   /* CSS specific to iOS devices */
