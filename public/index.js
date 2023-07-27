@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
     if (window.scrollY > offsetHeight) {
         logo.classList.remove('hidden');
         logo.classList.add('inline-block');
-        navbar.classList.add('bg-white','transition','duration-500');
+        navbar.classList.add('bg-white','transition','duration-800');
         navbar.classList.remove('text-primary-white');
         navbar.classList.add('text-primary-black');
         navbar.classList.remove('transition', 'delay-800');
@@ -42,7 +42,7 @@ burger.addEventListener('click', () => {
         navbar.classList.add('bg-white'); 
         navbar.classList.add('text-primary-black');
         navbar.classList.remove('text-primary-white');
-        navbar.classList.remove('transition', 'delay-800','duration-500');
+        navbar.classList.remove('transition', 'delay-800','duration-800');
         
         logo.classList.remove('hidden');
         logo.classList.add('inline-block');
@@ -52,7 +52,7 @@ burger.addEventListener('click', () => {
     } else {
         menu.classList.remove('max-h-96');
         menu.classList.add('max-h-0');
-        navbar.classList.add('transition', 'delay-800','duration-500');
+        navbar.classList.add('transition', 'delay-800','duration-800');
         
         
         if (window.scrollY <= offsetHeight) { // Add this condition
