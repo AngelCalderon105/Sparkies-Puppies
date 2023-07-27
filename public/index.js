@@ -52,7 +52,7 @@ burger.addEventListener('click', () => {
     } else {
         menu.classList.remove('max-h-96');
         menu.classList.add('max-h-0');
-        navbar.classList.add('transition', 'delay-800');
+        navbar.classList.add('transition', 'delay-800','duration-500');
         
         
         if (window.scrollY <= offsetHeight) { // Add this condition
