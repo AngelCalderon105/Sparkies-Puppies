@@ -27,3 +27,9 @@
     background-attachment: fixed;
   }
 }
+
+.transition-h {
+
+  transition: max-height 0.5s;
+
+}
