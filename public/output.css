@@ -649,6 +649,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -698,10 +703,6 @@ video {
 
 .delay-800{
   transition-delay: 800ms;
-}
-
-.delay-1000{
-  transition-delay: 1000ms;
 }
 
 .duration-800{
