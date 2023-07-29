@@ -713,14 +713,6 @@ video {
   line-height: 1.75rem;
 }
 
-.leading-loose{
-  line-height: 2;
-}
-
-.tracking-wider{
-  letter-spacing: 0.05em;
-}
-
 .text-primary-black{
   --tw-text-opacity: 1;
   color: rgb(33 37 41 / var(--tw-text-opacity));
@@ -761,10 +753,6 @@ video {
 
 .duration-700{
   transition-duration: 700ms;
-}
-
-.duration-800{
-  transition-duration: 800ms;
 }
 
 .ease-in-out{
