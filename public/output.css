@@ -649,11 +649,6 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -670,6 +665,11 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-primary-black{
@@ -705,20 +705,12 @@ video {
   transition-delay: 800ms;
 }
 
-.duration-800{
-  transition-duration: 800ms;
-}
-
-.duration-1000{
-  transition-duration: 1000ms;
-}
-
-.duration-500{
-  transition-duration: 500ms;
-}
-
 .duration-700{
   transition-duration: 700ms;
+}
+
+.duration-800{
+  transition-duration: 800ms;
 }
 
 .ease-in-out{
