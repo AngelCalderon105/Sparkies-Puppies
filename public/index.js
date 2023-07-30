@@ -14,6 +14,7 @@ window.addEventListener('scroll', function() {
         navbar.classList.add('bg-white','transition','duration-700');
         navbar.classList.remove('text-primary-white');
         navbar.classList.add('text-primary-black');
+        navbar.classList.add('bg-white');
         navbar.classList.remove('transition', 'delay-800');
         mobileTitle.classList.remove('hidden');
 
@@ -37,7 +38,7 @@ window.addEventListener('scroll', function() {
 burger.addEventListener('click', () => {
 
     if (menu.classList.contains('max-h-0')) {
-        menu.classList.remove('max-h-0');
+        menu.classList.remove('max-h-0','md:h-auto');
         menu.classList.add('max-h-96');
         navbar.classList.add('bg-white'); 
         navbar.classList.add('text-primary-black');
@@ -51,7 +52,7 @@ burger.addEventListener('click', () => {
         
     } else {
         menu.classList.remove('max-h-96');
-        menu.classList.add('max-h-0');
+        menu.classList.add('max-h-0','md:h-auto');
         navbar.classList.add('transition', 'delay-800','duration-700');
         
         
