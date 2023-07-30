@@ -85,3 +85,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+showClock();
+setInterval("showClock()",1000);
+
+function showClock() {
+   let thisDay = new Date(); // returns current date   
+   let septDate = nextSept13(thisDay);
+   septDate.setHours(21);
+    
+   var countDown = septDate - thisDay;
+   
+   let dayCountDown = Math.floor(countDown / (1000 * 60 * 60 * 24)); 
+   let hourCountDown = Math.floor((countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+   let minCountDown = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
+   let secCountDown = Math.floor((countDown % (1000 * 60)) / 1000);
+    
+   document.getElementById("daysLeft").textContent = dayCountDown - 1;
+   document.getElementById("hoursLeft").textContent = hourCountDown + 3;
+   document.getElementById("minLeft").textContent = minCountDown;
+   document.getElementById("secLeft").textContent = secCountDown;
+}
+
+function nextSept13(currentDate) {
+   var cYear = currentDate.getFullYear();
+   var sDate = new Date("September 13, 2023");
+   sDate.setFullYear(cYear);
+   if ((sDate - currentDate) < 0) sDate.setFullYear(cYear + 1);
+   return sDate;
+}
