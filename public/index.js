@@ -79,6 +79,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
              
         });
-        menu.classList.add('hidden');
+        menu.classList.remove('max-h-96');
+        menu.classList.add('max-h-0','md:h-auto');
+        navbar.classList.add('transition', 'delay-800','duration-700');
     });
 });
+
