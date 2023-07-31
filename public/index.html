@@ -14,27 +14,28 @@
     <header class = "text-primary-white fixed top-0 w-full ">
         <!-- HAMBUGER -->
            <div class = "p-3 md:hidden flex justify-between" >
-           <div id ="hamburger">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 ">
-               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-           </svg>
-           </div>
-           <div class = "flex justify-center items-center">
-           <h2 class = "hidden" id = "mobile-title">Calderon Bulldogs</h2>
-           </div>
-           <img src="img/puppy_logo.png" alt="" class = "w-9 hidden" id = "logo"> 
-           </div>
+                <div id ="hamburger">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                     </svg>
+                </div>
+                <div class = "flex justify-center items-center">
+          
+                     <h2 class = "hidden" id = "mobile-title">Calderon Bulldogs</h2>
+                </div>
+                 <img src="img/puppy_logo.png" alt="" class = "w-9 hidden" id = "logo"> 
+            </div>
 
-       <nav class = "absolute  w-full md:top-0 max-h-0 overflow-hidden md:overflow-visible md:h-auto transition-all duration-800 ease-in-out rounded-b-lg bg-white text-primary-black text-xl md:bg-transparent md:text-white md:flex justify-between" id = "menu">    
+       <nav class = " w-full max-h-0 md:max-h-full overflow-hidden transition-all duration-800 ease-in-out  rounded-b-lg  text-xl  md:flex justify-between" id = "menu">    
            <ul class = "md:flex">
                <li class = "p-3">
-                   <a href="#section0">Home</a>
+                   <a href="#home">Home</a>
                </li>
                <li class = "p-3">
-                   <a href="#section1">About</a>
+                   <a href="#about">About</a>
                </li>
                <li class = "p-3">
-                   <a href="#section2">Gallery</a>
+                   <a href="#gallery">Gallery</a>
                </li>
            </ul>
            <a href="" class = ""> 
@@ -43,17 +44,17 @@
                
            <ul class = "md:flex">
                <li class = "p-3">
-               <a href="#section3">Available Puppies</a>
+               <a href="#ap">Available Puppies</a>
                </li>
                <li class = "p-3">
-                   <a href="#section4">Stud Service</a>
+                   <a href="#ss">Stud Service</a>
                </li>
            </ul>
        </nav>
    </header> 
    
    <!--  Home Page Design -->
-       <div class = "flex justify-center xl:justify-start items-center  min-h-screen bg-fixed bg-cover bg-center "  id="home">
+       <div class = "flex justify-center xl:justify-start items-center  bg-fixed bg-cover bg-center "  id="home">
               
                <div class = " text-primary-white w-11/12 xl:w-2/5 text-center xl:px-10 ">
                    <div class = "text-6xl md:text-8xl xl:text-9xl">
@@ -65,12 +66,39 @@
                    </div> 
                </div>
        </div>
-   
-        <!--background color-->
-    <div class="min-h-screen bg-lighter-white">
-        <div id="about" class="flex flex-col items-center justify-center">
+       <!-- Timer Countdown -->
+       <div class = "bg-primary-gray text-center py-16  text-3xl md:text-5xl" id = "ap">
+        
+        <h1>New Litter Coming In</h2>
+        <div class = "flex justify-center">
+            <div class = "flex justify-center w-max gap-3 md:gap-5 m-4 " id ="">
+            <div class="flex flex-col items-center">
+               <span class = "border-2 p-3 bg-primary-black w-20" id ="daysLeft">45</span>
+               <span class = " text-xl md:text-2xl">Days</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <span class = "border-2 p-3 bg-primary-black w-20" id ="hoursLeft">45</span>
+                <span class = " text-xl md:text-2xl">Hours</span>
+             </div>
+             <div class="flex flex-col items-center">
+                <span class = "border-2 p-3 bg-primary-black w-20" id ="minLeft">45</span>
+                <span class = " text-xl md:text-2xl">Min</span>
+             </div>
+             <div class="flex flex-col items-center">
+                <span class = "border-2 p-3 bg-primary-black w-20" id ="secLeft">45</span>
+                <span class = " text-xl md:text-2xl">Sec</span>
+             </div>
+               
+            </div>
+        </div>
+
+       </div>
        
-            <div class="bg-stone-300 w-full flex justify-center ">
+    <!--background color-->
+    <div class="min-h-screen bg-lighter-white" id="about">
+        <div  class="flex flex-col items-center justify-center ">
+       
+            <div class="bg-stone-300 w-full flex justify-center mt-16">
                 <img class="w-full  rounded-xl m-1 md:m-4 2xl:rounded-3xl " src="img/Kratos.jpg" alt="">
             </div>
             <div class="text-primary-black text-5xl mt-10 md:mt-20 tracking-wider">About Us</div>

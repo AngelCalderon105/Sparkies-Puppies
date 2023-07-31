@@ -14,6 +14,7 @@ window.addEventListener('scroll', function() {
         navbar.classList.add('bg-white','transition','duration-700');
         navbar.classList.remove('text-primary-white');
         navbar.classList.add('text-primary-black');
+        navbar.classList.add('bg-white');
         navbar.classList.remove('transition', 'delay-800');
         mobileTitle.classList.remove('hidden');
 
@@ -37,7 +38,7 @@ window.addEventListener('scroll', function() {
 burger.addEventListener('click', () => {
 
     if (menu.classList.contains('max-h-0')) {
-        menu.classList.remove('max-h-0');
+        menu.classList.remove('max-h-0','md:h-auto');
         menu.classList.add('max-h-96');
         navbar.classList.add('bg-white'); 
         navbar.classList.add('text-primary-black');
@@ -51,7 +52,7 @@ burger.addEventListener('click', () => {
         
     } else {
         menu.classList.remove('max-h-96');
-        menu.classList.add('max-h-0');
+        menu.classList.add('max-h-0','md:h-auto');
         navbar.classList.add('transition', 'delay-800','duration-700');
         
         
@@ -69,3 +70,46 @@ burger.addEventListener('click', () => {
         
     }
 });
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+             
+        });
+        menu.classList.remove('max-h-96');
+        menu.classList.add('max-h-0','md:h-auto');
+        navbar.classList.add('transition', 'delay-800','duration-700');
+    });
+});
+
+showClock();
+setInterval("showClock()",1000);
+
+function showClock() {
+   let thisDay = new Date(); // returns current date   
+   let septDate = nextSept13(thisDay);
+   septDate.setHours(21);
+    
+   var countDown = septDate - thisDay;
+   
+   let dayCountDown = Math.floor(countDown / (1000 * 60 * 60 * 24)); 
+   let hourCountDown = Math.floor((countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+   let minCountDown = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
+   let secCountDown = Math.floor((countDown % (1000 * 60)) / 1000);
+    
+   document.getElementById("daysLeft").textContent = dayCountDown - 1;
+   document.getElementById("hoursLeft").textContent = hourCountDown + 3;
+   document.getElementById("minLeft").textContent = minCountDown;
+   document.getElementById("secLeft").textContent = secCountDown;
+}
+
+function nextSept13(currentDate) {
+   var cYear = currentDate.getFullYear();
+   var sDate = new Date("September 13, 2023");
+   sDate.setFullYear(cYear);
+   if ((sDate - currentDate) < 0) sDate.setFullYear(cYear + 1);
+   return sDate;
+}

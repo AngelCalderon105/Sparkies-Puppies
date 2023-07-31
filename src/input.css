@@ -8,6 +8,7 @@ b
 }
 #home {
     background-image: url("img/home_Background.jpg");
+    height: 100svh;
 }
 
 @media only screen and (max-width: 768px) {
