@@ -101,7 +101,7 @@ function showClock() {
    let secCountDown = Math.floor((countDown % (1000 * 60)) / 1000);
     
    document.getElementById("daysLeft").textContent = dayCountDown - 1;
-   document.getElementById("hoursLeft").textContent = hourCountDown + 3;
+   document.getElementById("hoursLeft").textContent = hourCountDown + 2;
    document.getElementById("minLeft").textContent = minCountDown;
    document.getElementById("secLeft").textContent = secCountDown;
 }
