@@ -548,13 +548,44 @@ video {
   margin: 1rem;
 }
 
+.m-3{
+  margin: 0.75rem;
+}
+
+.m-2{
+  margin: 0.5rem;
+}
+
+.m-10{
+  margin: 2.5rem;
+}
+
+.mx-10{
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mx-5{
   margin-left: 1.25rem;
   margin-right: 1.25rem;
 }
 
-.my-5{
-  margin-top: 1.25rem;
+.mx-3{
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mb-5{
   margin-bottom: 1.25rem;
 }
 
@@ -574,8 +605,12 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-16{
-  margin-top: 4rem;
+.mt-40{
+  margin-top: 10rem;
+}
+
+.ml-96{
+  margin-left: 24rem;
 }
 
 .inline-block{
@@ -588,6 +623,18 @@ video {
 
 .hidden{
   display: none;
+}
+
+.h-64{
+  height: 16rem;
+}
+
+.h-52{
+  height: 13rem;
+}
+
+.h-full{
+  height: 100%;
 }
 
 .max-h-0{
@@ -623,6 +670,22 @@ video {
   width: max-content;
 }
 
+.w-auto{
+  width: auto;
+}
+
+.w-64{
+  width: 16rem;
+}
+
+.w-96{
+  width: 24rem;
+}
+
+.w-80{
+  width: 20rem;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -633,6 +696,10 @@ video {
 
 .items-center{
   align-items: center;
+}
+
+.justify-end{
+  justify-content: flex-end;
 }
 
 .justify-center{
@@ -696,6 +763,11 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-cover{
@@ -762,6 +834,21 @@ video {
   line-height: 1.75rem;
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .leading-loose{
   line-height: 2;
 }
@@ -783,6 +870,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .transition{
@@ -874,10 +966,6 @@ b
     margin-top: 1.75rem;
   }
 
-  .md\:mt-20{
-    margin-top: 5rem;
-  }
-
   .md\:inline-block{
     display: inline-block;
   }
@@ -954,10 +1042,6 @@ b
 
   .xl\:w-2\/5{
     width: 40%;
-  }
-
-  .xl\:w-1\/2{
-    width: 50%;
   }
 
   .xl\:max-w-7xl{
