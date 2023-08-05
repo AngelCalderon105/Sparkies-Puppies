@@ -11,10 +11,14 @@ module.exports = {
       },
       colors: {
         'lighter-white': '#F8F9FA',
-        'primary-black': '#212529',
         'primary-white': '#E9ECEF',
-        'primary-gray': '#495057',
-
+        'darker-white': '#DEE2E6',
+        'lighter-gray': '#CED4DA',
+        'primary-gray': '#ADB5BD',
+        'darker-gray': '#6C757D',
+        'darkest-gray': '#495057',
+        'lighter-black': '#343A40',
+        'primary-black': '#212529',
 
       },
   },
