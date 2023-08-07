@@ -13,7 +13,8 @@ module.exports = {
         'card-height': '37rem'
       },
       width:{
-        'card-width': '39rem'
+        'card-width': '39rem',
+        'm-card-width':'30rem'
       },
       colors: {
         'lighter-white': '#F8F9FA',

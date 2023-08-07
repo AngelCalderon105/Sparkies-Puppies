@@ -100,223 +100,227 @@
        <!--BACKGROUND COLOR-->
        <div class="min-h-screen bg-white" id = "ap">
         <!--CONTENT SECTION--> 
-        <h1 class="text-primary-black text-2xl m-16 flex justify-center xl:text-5xl">Available puppies</h1>
-        <div class="flex flex-col items-center justify-center gap-10 md:grid md:grid-cols-2">
-
-            <div class="max-w-screen-md mx-auto ">
+        <h1 class="text-primary-black text-2xl m-5 mb-20 flex justify-center sm:text-4xl lg:text-6xl xl:text-7xl">Available puppies</h1>
+        <div class="flex flex-col items-center justify-center m-auto gap-10 md:grid md:grid-cols-2">
+              
+            <div class="max-w-screen-md flex flex-col justify-center m-auto">
                 <!-- Responsive Card with Overlay Text -->
-                <div class="relative shadow-lg shadow-black rounded-xl overflow-hidden w-96 h-96 md:h-card-height md:w-card-width ">
+                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-96 sm:h-80 lg:w-m-card-width lg:h-96 xl:h-card-height xl:w-card-width">
                     <!-- Image as Background -->
                     <img src="img/card.jpg" alt="Image" class="absolute w-full h-full object-cover">
-            
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
                     <!-- Overlay Content -->
-                    <div class="absolute bottom-0 right-1 p-4 space-y-3  text-white">
-                        <h2 class="text-xs font-bold"> Male <br>
-                            7 weeks <br>
-                            Chocolate Tri <br></h2>
+                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
+                        <h1 class="text-black mx-3 sm:mx-6 lg:text-xl xl:text-4xl">Available</h1>
                     </div>
-            
+                    <div class="absolute bottom-3 right-3 text-white">
+                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl"> 
+                            Male <br>
+                            7 weeks <br>
+                            Chocolate Tri <br>
+                        </h2>
+                    </div>
+                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
+                     transition duration-300 bg-white py-2 px-4 text-black rounded-full hidden lg:block lg:text-3xl">Gallery</button>
+                </div>
+                <div class= "flex justify-center md:hidden mt-8">
+                    <button class="px-3 text-white bg-primary-black rounded-2xl md:hidden">
+                        Gallery
+                    </button>
                 </div>
             </div>
             
+            <div class="max-w-screen-md flex flex-col justify-center m-auto">
+                <!-- Responsive Card with Overlay Text -->
+                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-96 sm:h-80 lg:w-m-card-width lg:h-96 xl:h-card-height xl:w-card-width">
+                    <!-- Image as Background -->
+                    <img src="img/card.jpg" alt="Image" class="absolute w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+                    <!-- Overlay Content -->
+                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
+                        <h1 class="text-black mx-3 sm:mx-6 lg:text-xl xl:text-4xl">Available</h1>
+                    </div>
+                    <div class="absolute bottom-3 right-3 text-white">
+                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl"> 
+                            Male <br>
+                            7 weeks <br>
+                            Chocolate Tri <br>
+                        </h2>
+                    </div>
+                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 
+                    transition duration-300 bg-white py-2 px-4 text-black rounded-full hidden lg:block lg:text-3xl">Gallery</button>
+                </div>
+                <div class= "flex justify-center md:hidden mt-8">
+                    <button class="px-3 text-white bg-primary-black rounded-2xl md:hidden">
+                        Gallery
+                    </button>
+                </div>
+            </div>
+           
+            <div class="max-w-screen-md flex flex-col justify-center m-auto">
+                <!-- Responsive Card with Overlay Text -->
+                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-96 sm:h-80 lg:w-m-card-width lg:h-96 xl:h-card-height xl:w-card-width">
+                    <!-- Image as Background -->
+                    <img src="img/card.jpg" alt="Image" class="absolute w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+                    <!-- Overlay Content -->
+                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
+                        <h1 class="text-black mx-3 sm:mx-6 lg:text-xl xl:text-4xl">Available</h1>
+                    </div>
+                    <div class="absolute bottom-3 right-3 text-white">
+                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl"> 
+                            Male <br>
+                            7 weeks <br>
+                            Chocolate Tri <br>
+                        </h2>
+                    </div>
+                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 
+                    transition duration-300 bg-white py-2 px-4 text-black rounded-full hidden lg:block lg:text-3xl">Gallery</button>
+                </div>
+                <div class= "flex justify-center md:hidden mt-8">
+                    <button class="px-3 text-white bg-primary-black rounded-2xl md:hidden">
+                        Gallery
+                    </button>
+                </div>
+            </div>
             
-            <div class="flex flex-col items-center">
-            <div class="relative w-96 h-96 bg-center bg-cover rounded-xl shadow-lg shadow-black xl:w-8/12 xl:h-card-height" style="background-image: url(img/card.jpg);">
-                
-                <div class="flex justify-end">    
-                    <div class="bg-white text-black rounded-xl m-2">         
-                        <div class="mx-3">
-                             Available
-                        </div>
-                 </div>
+            <div class="max-w-screen-md flex flex-col justify-center m-auto">
+                <!-- Responsive Card with Overlay Text -->
+                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-96 sm:h-80 lg:w-m-card-width lg:h-96 xl:h-card-height xl:w-card-width">
+                    <!-- Image as Background -->
+                    <img src="img/card.jpg" alt="Image" class="absolute w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+                    <!-- Overlay Content -->
+                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
+                        <h1 class="text-black mx-3 sm:mx-6 lg:text-xl xl:text-4xl">Available</h1>
+                    </div>
+                    <div class="absolute bottom-3 right-3 text-white">
+                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl"> 
+                            Male <br>
+                            7 weeks <br>
+                            Chocolate Tri <br>
+                        </h2>
+                    </div>
+                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition
+                     duration-300 bg-white py-2 px-4 text-black rounded-full hidden lg:block lg:text-3xl">Gallery</button>
                 </div>
-                  <div class="flex justify-end">
-                      <div class=" m-3 absolute bottom-1">
-                         Male <br>
-                         7 weeks <br>
-                         Chocolate Tri <br>
-                       </div>
-                  </div>
-            </div>
-            <div class= "flex justify-center mt-6">
-            <button class="px-3 text-white bg-primary-black rounded-2xl md:hidden">
-                Gallery
-            </button>
-            </div>
-        </div>
-
-        <div class="flex flex-col items-center">
-            <div class="relative w-96 h-96 bg-center bg-cover rounded-xl shadow-lg shadow-black xl:w-8/12 xl:h-card-height" style="background-image: url(img/card.jpg);">
-                
-                <div class="flex justify-end">    
-                    <div class="bg-white text-black rounded-xl m-2">         
-                        <div class="mx-3">
-                             Available
-                        </div>
-                 </div>
+                <div class= "flex justify-center md:hidden mt-8">
+                    <button class="px-3 text-white bg-primary-black rounded-2xl md:hidden">
+                        Gallery
+                    </button>
                 </div>
-                  <div class="flex justify-end">
-                      <div class=" m-3 absolute bottom-1">
-                         Male <br>
-                         7 weeks <br>
-                         Chocolate Tri <br>
-                       </div>
-                  </div>
             </div>
-            <div class= "flex justify-center mt-6">
-            <button class="px-3 text-white bg-primary-black rounded-2xl md:hidden">
-                Gallery
-            </button>
-            </div>
-        </div>
-
-        <div class="flex flex-col items-center">
-            <div class="relative w-96 h-96 bg-center bg-cover rounded-xl shadow-lg shadow-black xl:w-8/12 xl:h-card-height" style="background-image: url(img/card.jpg);">
-                
-                <div class="flex justify-end">    
-                    <div class="bg-white text-black rounded-xl m-2">         
-                        <div class="mx-3">
-                             Available
-                        </div>
-                 </div>
+        
+            <div class="max-w-screen-md flex flex-col justify-center m-auto">
+                <!-- Responsive Card with Overlay Text -->
+                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-96 sm:h-80 lg:w-m-card-width lg:h-96 xl:h-card-height xl:w-card-width">
+                    <!-- Image as Background -->
+                    <img src="img/card.jpg" alt="Image" class="absolute w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+                    <!-- Overlay Content -->
+                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
+                        <h1 class="text-black mx-3 sm:mx-6 lg:text-xl xl:text-4xl">Available</h1>
+                    </div>
+                    <div class="absolute bottom-3 right-3 text-white">
+                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl"> 
+                            Male <br>
+                            7 weeks <br>
+                            Chocolate Tri <br>
+                        </h2>
+                    </div>
+                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300
+                     bg-white py-2 px-4 text-black rounded-full hidden lg:block lg:text-3xl">Gallery</button>
                 </div>
-                  <div class="flex justify-end">
-                      <div class=" m-3 absolute bottom-1">
-                         Male <br>
-                         7 weeks <br>
-                         Chocolate Tri <br>
-                       </div>
-                  </div>
-            </div>
-            <div class= "flex justify-center mt-6">
-            <button class="px-3 text-white bg-primary-black rounded-2xl md:hidden">
-                Gallery
-            </button>
-            </div>
-        </div>
-
-        <div class="flex flex-col items-center">
-            <div class="relative w-96 h-96 bg-center bg-cover rounded-xl shadow-lg shadow-black xl:w-8/12 xl:h-card-height" style="background-image: url(img/card.jpg);">
-                
-                <div class="flex justify-end">    
-                    <div class="bg-white text-black rounded-xl m-2">         
-                        <div class="mx-3">
-                             Available
-                        </div>
-                 </div>
+                <div class= "flex justify-center md:hidden mt-8">
+                    <button class="px-3 text-white bg-primary-black rounded-2xl md:hidden">
+                        Gallery
+                    </button>
                 </div>
-                  <div class="flex justify-end">
-                      <div class=" m-3 absolute bottom-1">
-                         Male <br>
-                         7 weeks <br>
-                         Chocolate Tri <br>
-                       </div>
-                  </div>
             </div>
-            <div class= "flex justify-center mt-6">
-            <button class="px-3 text-white bg-primary-black rounded-2xl md:hidden">
-                Gallery
-            </button>
-            </div>
-        </div>
-        <div class="flex flex-col items-center">
-            <div class="relative w-96 h-96 bg-center bg-cover rounded-xl shadow-lg shadow-black xl:w-8/12 xl:h-card-height" style="background-image: url(img/card.jpg);">
-                
-                <div class="flex justify-end">    
-                    <div class="bg-white text-black rounded-xl m-2">         
-                        <div class="mx-3">
-                             Available
-                        </div>
-                 </div>
+            
+            <div class="max-w-screen-md flex flex-col justify-center m-auto">
+                <!-- Responsive Card with Overlay Text -->
+                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-96 sm:h-80 lg:w-m-card-width lg:h-96 xl:h-card-height xl:w-card-width">
+                    <!-- Image as Background -->
+                    <img src="img/card.jpg" alt="Image" class="absolute w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+                    <!-- Overlay Content -->
+                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
+                        <h1 class="text-black mx-3 sm:mx-6 lg:text-xl xl:text-4xl">Available</h1>
+                    </div>
+                    <div class="absolute bottom-3 right-3 text-white">
+                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl"> 
+                            Male <br>
+                            7 weeks <br>
+                            Chocolate Tri <br>
+                        </h2>
+                    </div>
+                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition 
+                    duration-300 bg-white py-2 px-4 text-black rounded-full hidden lg:block lg:text-3xl">Gallery</button>
                 </div>
-                  <div class="flex justify-end">
-                      <div class=" m-3 absolute bottom-1">
-                         Male <br>
-                         7 weeks <br>
-                         Chocolate Tri <br>
-                       </div>
-                  </div>
-            </div>
-            <div class= "flex justify-center mt-6">
-            <button class="px-3 text-white bg-primary-black rounded-2xl md:hidden">
-                Gallery
-            </button>
-            </div>
-        </div>
-                       
-        <div class="flex flex-col items-center">
-            <div class="relative w-96 h-96 bg-center bg-cover rounded-xl shadow-lg shadow-black xl:w-8/12 xl:h-card-height" style="background-image: url(img/card.jpg);">
-                
-                <div class="flex justify-end">    
-                    <div class="bg-white text-black rounded-xl m-2">         
-                        <div class="mx-3">
-                             Available
-                        </div>
-                 </div>
+                <div class= "flex justify-center md:hidden mt-8">
+                    <button class="px-3 text-white bg-primary-black rounded-2xl md:hidden">
+                        Gallery
+                    </button>
                 </div>
-                  <div class="flex justify-end">
-                      <div class=" m-3 absolute bottom-1">
-                         Male <br>
-                         7 weeks <br>
-                         Chocolate Tri <br>
-                       </div>
-                  </div>
             </div>
-            <div class= "flex justify-center mt-6">
-            <button class="px-3 text-white bg-primary-black rounded-2xl md:hidden">
-                Gallery
-            </button>
-            </div>
-        </div>
-        <div class="flex flex-col items-center">
-            <div class="relative w-96 h-96 bg-center bg-cover rounded-xl shadow-lg shadow-black xl:w-8/12 xl:h-card-height" style="background-image: url(img/card.jpg);">
-                
-                <div class="flex justify-end">    
-                    <div class="bg-white text-black rounded-xl m-2">         
-                        <div class="mx-3">
-                             Available
-                        </div>
-                 </div>
+        
+            <div class="max-w-screen-md flex flex-col justify-center m-auto">
+                <!-- Responsive Card with Overlay Text -->
+                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-96 sm:h-80 lg:w-m-card-width lg:h-96 xl:h-card-height xl:w-card-width">
+                    <!-- Image as Background -->
+                    <img src="img/card.jpg" alt="Image" class="absolute w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+                    <!-- Overlay Content -->
+                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
+                        <h1 class="text-black mx-3 sm:mx-6 lg:text-xl xl:text-4xl">Available</h1>
+                    </div>
+                    <div class="absolute bottom-3 right-3 text-white">
+                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl"> 
+                            Male <br>
+                            7 weeks <br>
+                            Chocolate Tri <br>
+                        </h2>
+                    </div>
+                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition
+                     duration-300 bg-white py-2 px-4 text-black rounded-full hidden lg:block lg:text-3xl">Gallery</button>
                 </div>
-                  <div class="flex justify-end">
-                      <div class=" m-3 absolute bottom-1">
-                         Male <br>
-                         7 weeks <br>
-                         Chocolate Tri <br>
-                       </div>
-                  </div>
-            </div>
-            <div class= "flex justify-center mt-6">
-            <button class="px-3 text-white bg-primary-black rounded-2xl md:hidden">
-                Gallery
-            </button>
-            </div>
-        </div>
-        <div class="flex flex-col items-center">
-            <div class="relative w-96 h-96 bg-center bg-cover rounded-xl shadow-lg shadow-black xl:w-8/12 xl:h-card-height" style="background-image: url(img/card.jpg);">
-                
-                <div class="flex justify-end">    
-                    <div class="bg-white text-black rounded-xl m-2">         
-                        <div class="mx-3">
-                             Available
-                        </div>
-                 </div>
+                <div class= "flex justify-center md:hidden mt-8">
+                    <button class="px-3 text-white bg-primary-black rounded-2xl md:hidden">
+                        Gallery
+                    </button>
                 </div>
-                  <div class="flex justify-end">
-                      <div class=" m-3 absolute bottom-1">
-                         Male <br>
-                         7 weeks <br>
-                         Chocolate Tri <br>
-                       </div>
-                  </div>
             </div>
-            <div class= "flex justify-center mt-6">
-            <button class="px-3 text-white bg-primary-black rounded-2xl md:hidden">
-                Gallery
-            </button>
+            
+            <div class="max-w-screen-md flex flex-col justify-center m-auto">
+                <!-- Responsive Card with Overlay Text -->
+                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-96 sm:h-80 lg:w-m-card-width lg:h-96 xl:h-card-height xl:w-card-width">
+                    <!-- Image as Background -->
+                    <img src="img/card.jpg" alt="Image" class="absolute w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+                    <!-- Overlay Content -->
+                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
+                        <h1 class="text-black mx-3 sm:mx-6 lg:text-xl xl:text-4xl">Available</h1>
+                    </div>
+                    <div class="absolute bottom-3 right-3 text-white">
+                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl"> 
+                            Male <br>
+                            7 weeks <br>
+                            Chocolate Tri <br>
+                        </h2>
+                    </div>
+                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 
+                    group-hover:opacity-100 transition duration-300 bg-white py-2 px-4 text-black rounded-full hidden lg:text-3xl lg:block">Gallery</button>
+                </div>
+                <div class= "flex justify-center md:hidden mt-8">
+                    <button class="px-3 text-white bg-primary-black rounded-2xl md:hidden">
+                        Gallery
+                    </button>
+                </div>
             </div>
-        </div>
-        </div>
+       
+    </div>
+        
         <div class = "min-h-screen bg-primary-black">
         
        </div>
