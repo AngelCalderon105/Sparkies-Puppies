@@ -9,6 +9,12 @@ module.exports = {
       transitionDuration: {
         '800': '800ms',
       },
+      height:{
+        'card-height': '37rem'
+      },
+      width:{
+        'card-width': '39rem'
+      },
       colors: {
         'lighter-white': '#F8F9FA',
         'primary-white': '#E9ECEF',
