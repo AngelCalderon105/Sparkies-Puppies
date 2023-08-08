@@ -10,11 +10,13 @@ module.exports = {
         '800': '800ms',
       },
       height:{
-        'card-height': '37rem'
+        'card-height': '37rem',
+        'lg-card-height':'34rem'
       },
       width:{
         'card-width': '39rem',
-        'm-card-width':'30rem'
+        'm-card-width':'30rem',
+        'lg-card-width':'35rem'
       },
       colors: {
         'lighter-white': '#F8F9FA',
