@@ -90,23 +90,26 @@
                 </div>
                
             </div>
-            <button class = " bg-primary-black text-primary-white text-xl rounded-xl mt-2 px-6 md:px-12 py-3" id="showFormBtn">Notify Me</button>
+            <button class = " bg-primary-black text-primary-white text-xl rounded-xl mt-2 px-6 md:px-12 py-3 shadow-md shadow-black" id="showFormBtn">Notify Me</button>
            
         </div>
         <div id="reminderForm" class="hidden">
-            <form action="/setReminder" method="post" >
-                <div class = "flex justify-end " >
+            <form action="/setReminder" method="post" class = "w-11/12 max-w-sm sm:max-w-lg">
+                <div class = "self-end" >
                     <button id = "closeFormBtn">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                       </svg>
                       </button> 
                 </div>
+                <h1 class = "">Puppy Notification!</h1>
+                <p class="text-base">Feel free to leave you contact info and <br>
+                we'll send you a text when our litter is ready!</p>
                 
-              <input type="name" name="name" placeholder="Name" required>
-              <input type="email" name="email" placeholder="Email" >
-              <input type="text" name="phone" placeholder="Phone" required>
-              <button type="submit">Submit</button>
+              <input type="name" name="name" placeholder="Name" required class = "w-full text-xl placeholder:text-xl border-b-2 focus:outline-none">
+              <input type="email" name="email" placeholder="Email" class = "w-full text-xl placeholder:text-xl border-b-2 focus:outline-none">
+              <input type="text" name="phone" placeholder="Phone" required class = "w-full text-xl placeholder:text-xl border-b-2 focus:outline-none">
+              <button type="submit" class = "py-2 px-20 sm:py-3 sm:px-24 text-white text-lg bg-primary-black rounded-3xl shadow-md shadow-black">Submit</button>
               
             </form>
             
