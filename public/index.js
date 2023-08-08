@@ -113,6 +113,8 @@ function nextSept13(currentDate) {
    if ((sDate - currentDate) < 0) sDate.setFullYear(cYear + 1);
    return sDate;
 }
+
+
 const form = document.getElementById('reminderForm');
 
 document.getElementById('showFormBtn').addEventListener('click', function() {

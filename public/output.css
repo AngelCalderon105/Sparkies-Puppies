@@ -626,10 +626,6 @@ video {
   width: max-content;
 }
 
-.cursor-auto{
-  cursor: auto;
-}
-
 .flex-col{
   flex-direction: column;
 }
