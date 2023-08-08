@@ -532,12 +532,32 @@ video {
   position: absolute;
 }
 
+.relative{
+  position: relative;
+}
+
+.right-4{
+  right: 1rem;
+}
+
 .top-0{
   top: 0px;
 }
 
+.top-1{
+  top: 0.25rem;
+}
+
 .top-full{
   top: 100%;
+}
+
+.right-2{
+  right: 0.5rem;
+}
+
+.right-3{
+  right: 0.75rem;
 }
 
 .z-50{
@@ -648,10 +668,6 @@ video {
 
 .gap-4{
   gap: 1rem;
-}
-
-.self-end{
-  align-self: flex-end;
 }
 
 .overflow-hidden{
@@ -782,29 +798,19 @@ video {
   line-height: 1;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-.text-9xl{
-  font-size: 8rem;
-  line-height: 1;
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .leading-loose{
@@ -946,7 +952,7 @@ b
   align-items: center;
   background-color: #fff;
   gap: 2rem;
-  padding: .5rem 2rem 1.5rem 2rem;
+  padding: 4rem 2rem 1.5rem 2rem;
   border-radius: 3%;
 }
 
@@ -970,6 +976,10 @@ b
 }
 
 @media (min-width: 640px){
+  .sm\:right-4{
+    right: 1rem;
+  }
+
   .sm\:max-w-lg{
     max-width: 32rem;
   }
