@@ -72,16 +72,10 @@ b
   z-index: 1000;
 } 
 
-#reminderForm form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#reminderForm form{
   background-color: #fff;
-  gap: 2rem;
   padding: 4rem 2rem 1.5rem 2rem;
   border-radius: 3%;
- 
   
 }
 

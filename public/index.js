@@ -1,3 +1,4 @@
+
 const burger = document.querySelector('#hamburger');
 const menu = document.querySelector('#menu');
 const navbar = document.querySelector('header');
@@ -115,17 +116,32 @@ function nextSept13(currentDate) {
 }
 
 
+const formContainer = document.getElementById('form-container');
 const form = document.getElementById('reminderForm');
+const thankYouMessage = document.getElementById('thankYouMessage');
+
+
+
 
 document.getElementById('showFormBtn').addEventListener('click', function() {
     form.classList.remove('hidden');
-    form.classList.add('flex','justify-center','items-center')
+    form.classList.add('flex','justify-center','items-center');
   });
   
   document.getElementById('closeFormBtn').addEventListener('click', function() {
     form.classList.add('hidden');
     
   });
+  document.getElementById('closeFormBtn2').addEventListener('click', function() {
+    form.classList.add('hidden');
+    thankYouMessage.classList.add('hidden');
+    formContainer.classList.remove('hidden');
+
+    formContainer.classList.add('flex');
+    
+    
+  });
+  
 
 
   
