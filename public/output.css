@@ -604,6 +604,10 @@ video {
   margin: 2.5rem;
 }
 
+.m-4{
+  margin: 1rem;
+}
+
 .mx-1{
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -1106,6 +1110,11 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .leading-loose{
