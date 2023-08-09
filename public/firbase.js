@@ -16,6 +16,7 @@ const inputName = document.querySelector('#input-name');
 const inputEmail = document.querySelector('#input-email');
 const inputPhone = document.querySelector('#input-phone');
 const submitButton = document.querySelector('#form-submit');
+
 const formContainer = document.getElementById('form-container');
 const form = document.getElementById('reminderForm');
 const thankYouMessage = document.querySelector('#thankYouMessage');
