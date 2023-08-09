@@ -1084,6 +1084,10 @@ b
     margin-right: 2.5rem;
   }
 
+  .sm\:hidden{
+    display: none;
+  }
+
   .sm\:h-72{
     height: 18rem;
   }
