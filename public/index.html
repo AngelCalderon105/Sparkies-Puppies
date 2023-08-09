@@ -8,18 +8,6 @@
     <link rel="stylesheet" href="output.css">
     <script src="index.js" defer></script>
     <script src="firbase.js" type="module"></script>
-    <style>
-            #switch:checked + label #puppies {
-        background-color: transparent;
-        color: white;
-    }
-
-    #switch:checked + label #parents {
-        background-color: black;
-        color: black;
-    }
-    </style>
-    
    
 </head>
 
@@ -156,19 +144,19 @@
         <div class="flex flex-col justify-center items-center m-10 mb-20">
         <h1 class="text-primary-black  m-5 mb-20 text-center text-3xl sm:text-4xl lg:text-6xl xl:text-7xl">Available Puppies</h1> 
        
-        <div class="relative w-52 h-12 rounded-full bg-primary-gray overflow-hidden xl:w-80 xl:h-14">
+        <div class="relative w-48 h-12 rounded-full bg-primary-gray overflow-hidden xl:w-52 xl:h-14">
             <input type="checkbox" id="switch" class="hidden" onchange="toggleLabelColors()">
-            <label for="switch" class="flex items-center w-full h-12 cursor-pointer xl:h-14">
-                <span id="puppies" class="flex items-center justify-center w-1/2 h-12 rounded-full text-black bg-black xl:w-40 xl:h-14">
-                    Pups
+            <label for="switch" class="flex items-center w-full h-12 cursor-pointer xl:w-60 xl:h-14">
+                <span id="puppies" class="flex items-center justify-center w-32 h-10 m-1 rounded-full text-black bg-black xl:w-24 xl:h-12">
+                    Puppies
                 </span>
-                <span id="parents" class="flex items-center justify-center w-1/2 h-12 rounded-full text-white xl:w-40 xl:h-14">
+                <span id="parents" class="flex items-center justify-center w-32 h-10 m-1 rounded-full text-white xl:w-24 xl:h-12 ">
+                    
                     Parents
+               
                 </span>
             </label>
         </div>
-        
-        
         </div>
         <div class="flex flex-col items-center justify-center mx-1 sm:mx-10 xl:mx-28 gap-16 md:grid md:grid-cols-2 mb-14 ">
             
@@ -398,16 +386,16 @@
             <!-- Responsive Card with Overlay Text -->
             <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-64 h-60 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
                 <!-- Image as Background -->
-                <img src="img/card.jpg" alt="Image" class="absolute w-full h-full object-cover">
+                <img src="img/20200217_195431.jpg" alt="Image" class="absolute w-full h-full object-top">
                 <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300"></div>
                 <!-- Overlay Content -->
                 <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
-                    <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Available</h1>
+                    <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Mother</h1>
                 </div>
                 <div class="absolute bottom-3 right-3 text-white">
                     <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right"> 
-                        Male <br>
-                        7 weeks <br>
+                        Female <br>
+                        2 years old<br>
                         Chocolate Tri <br>
                     </h2>
                 </div>
@@ -428,16 +416,16 @@
                 <!-- Responsive Card with Overlay Text -->
                 <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-64 h-60 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
                     <!-- Image as Background -->
-                    <img src="img/card.jpg" alt="Image" class="absolute w-full h-full object-cover">
+                    <img src="img/KratosParentCard.PNG" alt="Image" class="absolute w-full h-full object-cover">
                     <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300"></div>
                     <!-- Overlay Content -->
                     <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
-                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Available</h1>
+                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Father</h1>
                     </div>
-                    <div class="absolute bottom-3 right-3 text-white">
+                    <div class="absolute bottom-3 right-5 text-white">
                         <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right"> 
                             Male <br>
-                            7 weeks <br>
+                            1 year old <br>
                             Chocolate Tri <br>
                         </h2>
                     </div>
