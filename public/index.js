@@ -143,5 +143,23 @@ document.getElementById('showFormBtn').addEventListener('click', function() {
   });
   
 
+  function toggleLabelColors() {
+    const switchEl = document.getElementById('switch');
+    const puppiesEl = document.getElementById('puppies');
+    const parentsEl = document.getElementById('parents');
 
+    if (switchEl.checked) {
+        puppiesEl.style.backgroundColor = 'transparent';
+        puppiesEl.style.color = 'white';
+
+        parentsEl.style.backgroundColor = 'black';
+        parentsEl.style.color = 'white';
+    } else {
+        puppiesEl.style.backgroundColor = 'black';
+        puppiesEl.style.color = 'white';
+
+        parentsEl.style.backgroundColor = 'transparent';
+        parentsEl.style.color = 'black';
+    }
+}
   
