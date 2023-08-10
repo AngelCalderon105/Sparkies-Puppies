@@ -7,13 +7,13 @@ b
   color:black;
 }
 #home {
-    background-image: url("img/home_Background.jpg");
+    background-image: url("img/home_Background.webp");
     height: 100svh;
 }
 
 @media only screen and (max-width: 768px) {
     #home {
-        background-image: url("img/mobile_background.jpg");
+        background-image: url("img/mobile_background.webp");
     }
 }
 
@@ -51,7 +51,7 @@ b
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url("img/paws5.jpg");
+  background-image: url("img/paws5.webp");
   background-size: cover ;
   background-position: bottom;
   opacity: .1;
