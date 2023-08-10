@@ -156,13 +156,13 @@ let isActive = false;
 switchEl.addEventListener('click', () => {
   if (isActive) {
     puppiesEl.classList.add('translate-x-0');
-    puppiesEl.classList.remove('translate-x-full');
+    puppiesEl.classList.remove('translate-x-24');
     puppiesEl.innerText = 'Puppies';
     puppiesPage.classList.remove('hidden');
     puppiesPage.classList.add('md:grid');
     parentsPages.classList.add('hidden');
   } else {
-    puppiesEl.classList.add('translate-x-full');
+    puppiesEl.classList.add('translate-x-24');
     puppiesEl.classList.remove('translate-x-0');
     puppiesEl.innerText = 'Parents';
     puppiesPage.classList.remove('md:grid');
