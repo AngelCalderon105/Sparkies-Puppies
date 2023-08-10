@@ -75,12 +75,8 @@ burger.addEventListener('click', () => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
         const target = document.querySelector(this.getAttribute('href'));
-
-        // considering that offsetHeight already stores the height of the navbar
         const scrollToPosition = window.scrollY + target.getBoundingClientRect().top - offsetHeight;
-        
         window.scrollTo({
             top: scrollToPosition,
             behavior: 'smooth'
@@ -161,8 +157,6 @@ document.getElementById('showFormBtn').addEventListener('click', function() {
         if (isActive) {
             puppiesEl.classList.toggle('active');
             puppiesEl.innerText = 'Puppies';
-            
-         
             puppiesPage.classList.remove('hidden');
             puppiesPage.classList.add('md:grid');
             parentsPages.classList.add('hidden');
@@ -170,7 +164,6 @@ document.getElementById('showFormBtn').addEventListener('click', function() {
         } else {
             puppiesEl.classList.toggle('active');
             puppiesEl.innerText = 'Parents';
-            
             puppiesPage.classList.remove('md:grid');
             puppiesPage.classList.add('hidden');
             parentsPages.classList.remove('hidden');
