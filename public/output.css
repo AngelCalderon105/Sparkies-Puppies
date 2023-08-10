@@ -592,8 +592,9 @@ video {
   margin: auto;
 }
 
-.m-5{
-  margin: 1.25rem;
+.mx-10{
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .mx-3{
@@ -606,29 +607,14 @@ video {
   margin-right: 1.25rem;
 }
 
-.mx-2{
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.mx-8{
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.mx-10{
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-}
-
-.my-10{
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
 }
 
 .mb-10{
@@ -647,12 +633,12 @@ video {
   margin-bottom: 1.75rem;
 }
 
-.mt-1{
-  margin-top: 0.25rem;
+.mr-1{
+  margin-right: 0.25rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
+.mt-1{
+  margin-top: 0.25rem;
 }
 
 .mt-2{
@@ -665,14 +651,6 @@ video {
 
 .mt-6{
   margin-top: 1.5rem;
-}
-
-.mr-1{
-  margin-right: 0.25rem;
-}
-
-.block{
-  display: block;
 }
 
 .inline-block{
@@ -699,10 +677,6 @@ video {
   height: 3rem;
 }
 
-.h-5{
-  height: 1.25rem;
-}
-
 .h-6{
   height: 1.5rem;
 }
@@ -713,10 +687,6 @@ video {
 
 .h-full{
   height: 100%;
-}
-
-.h-4{
-  height: 1rem;
 }
 
 .max-h-0{
@@ -822,12 +792,12 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-rows-5{
-  grid-template-rows: repeat(5, minmax(0, 1fr));
-}
-
 .grid-rows-4{
   grid-template-rows: repeat(4, minmax(0, 1fr));
+}
+
+.grid-rows-5{
+  grid-template-rows: repeat(5, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -884,10 +854,6 @@ video {
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-0{
-  gap: 0px;
 }
 
 .gap-x-2{
@@ -1015,6 +981,11 @@ video {
   padding-right: 5rem;
 }
 
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1045,28 +1016,12 @@ video {
   padding-bottom: 1rem;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
-.px-11{
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
-}
-
-.px-1{
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.pb-5{
-  padding-bottom: 1.25rem;
+.pb-3{
+  padding-bottom: 0.75rem;
 }
 
 .pt-10{
@@ -1075,26 +1030,6 @@ video {
 
 .pt-5{
   padding-top: 1.25rem;
-}
-
-.pb-3{
-  padding-bottom: 0.75rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
-}
-
-.pt-0{
-  padding-top: 0px;
-}
-
-.pb-0{
-  padding-bottom: 0px;
-}
-
-.pb-2{
-  padding-bottom: 0.5rem;
 }
 
 .text-center{
@@ -1259,13 +1194,13 @@ b
 }
 
 #home {
-  background-image: url("img/home_Background.jpg");
+  background-image: url("img/background.webp");
   height: 100svh;
 }
 
 @media only screen and (max-width: 768px) {
   #home {
-    background-image: url("img/mobile_background.jpg");
+    background-image: url("img/mobile_background.webp");
   }
 }
 
@@ -1300,7 +1235,7 @@ b
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url("img/paws5.jpg");
+  background-image: url("img/paws5.webp");
   background-size: cover ;
   background-position: bottom;
   opacity: .1;
@@ -1378,11 +1313,6 @@ b
     margin-right: 1.5rem;
   }
 
-  .sm\:mx-0{
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   .sm\:hidden{
     display: none;
   }
@@ -1420,19 +1350,14 @@ b
     padding-right: 6rem;
   }
 
-  .sm\:py-3{
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
-  .sm\:px-11{
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
-  }
-
   .sm\:px-9{
     padding-left: 2.25rem;
     padding-right: 2.25rem;
+  }
+
+  .sm\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .sm\:pb-5{
@@ -1532,11 +1457,6 @@ b
     padding: 0.75rem;
   }
 
-  .md\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .md\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
@@ -1557,13 +1477,13 @@ b
     line-height: 1;
   }
 
-  .md\:text-xl{
-    font-size: 1.25rem;
+  .md\:text-lg{
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
-  .md\:text-lg{
-    font-size: 1.125rem;
+  .md\:text-xl{
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
@@ -1597,24 +1517,12 @@ b
     max-width: 56rem;
   }
 
-  .lg\:max-w-xl{
-    max-width: 36rem;
-  }
-
-  .lg\:max-w-3xl{
-    max-width: 48rem;
+  .lg\:gap-0{
+    gap: 0px;
   }
 
   .lg\:gap-20{
     gap: 5rem;
-  }
-
-  .lg\:gap-5{
-    gap: 1.25rem;
-  }
-
-  .lg\:gap-0{
-    gap: 0px;
   }
 
   .lg\:text-2xl{

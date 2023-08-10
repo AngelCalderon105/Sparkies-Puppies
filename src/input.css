@@ -7,7 +7,7 @@ b
   color:black;
 }
 #home {
-    background-image: url("img/home_Background.webp");
+    background-image: url("img/background.webp");
     height: 100svh;
 }
 
@@ -16,7 +16,6 @@ b
         background-image: url("img/mobile_background.webp");
     }
 }
-
 
 @supports (-webkit-touch-callout: none) {
   /* CSS specific to iOS devices */ 
