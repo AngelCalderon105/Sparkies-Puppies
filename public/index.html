@@ -144,26 +144,20 @@
         <div class="flex flex-col justify-center items-center  ">
         <h1 class="text-primary-black m-10 text-center text-3xl sm:text-4xl lg:text-6xl xl:text-7xl">Available Puppies</h1> 
        
-        <div class="relative  rounded-full bg-primary-gray overflow-hidden w-52 mb-10">
+        <div class="relative rounded-full bg-primary-gray overflow-hidden w-52 mb-10">
             <input type="checkbox" id="switch" class="hidden">
             <label for="switch" class="flex items-center cursor-pointer w-60 h-12 relative overflow-hidden">
-                <span id="puppies" class="flex items-center justify-center  rounded-full bg-black w-28 h-12 absolute ">
-                    Puppies
-                </span>
-                 <span id="parents" class="flex items-center justify-center rounded-full text-black w-28 h-12 ">
-                    
-                    Puppies
-               
-                </span> 
-                <span id="parents" class="flex items-center justify-center rounded-full text-black w-24 h-12 ">
-                    
-                    Parents
-               
-                </span>
-                
+              <span id="puppies" class="flex items-center justify-center rounded-full bg-black w-28 h-12 absolute transition-transform duration-300 ease-in-out transform translate-x-0">
+                Puppies
+              </span>
+              <span id="parents" class="flex items-center justify-center rounded-full text-black w-28 h-12">
+                Parents
+              </span>
             </label>
-        </div>
-        </div>
+          </div>
+        
+    
+    </div>
         <div class="flex flex-col items-center justify-center sm:mx-10 xl:mx-28 gap-16 md:grid md:grid-cols-2 mb-14 " id="puppies-page">
             <div class="max-w-screen-md flex flex-col justify-center m-auto">
                 <!-- Responsive Card with Overlay Text -->

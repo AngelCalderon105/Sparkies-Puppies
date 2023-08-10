@@ -145,31 +145,32 @@ document.getElementById('showFormBtn').addEventListener('click', function() {
   });
   
 
-    const switchEl = document.getElementById('switch');
-    const puppiesEl = document.getElementById('puppies');
-    const parentsEl = document.getElementById('parents');
-    const puppiesPage = document.getElementById('puppies-page');
-    const parentsPages = document.getElementById('parents-page');
+  const switchEl = document.getElementById('switch');
+const puppiesEl = document.getElementById('puppies');
+const parentsEl = document.getElementById('parents');
+const puppiesPage = document.getElementById('puppies-page');
+const parentsPages = document.getElementById('parents-page');
 
-    let isActive = false;
+let isActive = false;
 
-    switchEl.addEventListener('click', () => {
-        if (isActive) {
-            puppiesEl.classList.toggle('active');
-            puppiesEl.innerText = 'Puppies';
-            puppiesPage.classList.remove('hidden');
-            puppiesPage.classList.add('md:grid');
-            parentsPages.classList.add('hidden');
-
-        } else {
-            puppiesEl.classList.toggle('active');
-            puppiesEl.innerText = 'Parents';
-            puppiesPage.classList.remove('md:grid');
-            puppiesPage.classList.add('hidden');
-            parentsPages.classList.remove('hidden');
-        }
-        isActive = !isActive;
-    });
+switchEl.addEventListener('click', () => {
+  if (isActive) {
+    puppiesEl.classList.add('translate-x-0');
+    puppiesEl.classList.remove('translate-x-full');
+    puppiesEl.innerText = 'Puppies';
+    puppiesPage.classList.remove('hidden');
+    puppiesPage.classList.add('md:grid');
+    parentsPages.classList.add('hidden');
+  } else {
+    puppiesEl.classList.add('translate-x-full');
+    puppiesEl.classList.remove('translate-x-0');
+    puppiesEl.innerText = 'Parents';
+    puppiesPage.classList.remove('md:grid');
+    puppiesPage.classList.add('hidden');
+    parentsPages.classList.remove('hidden');
+  }
+  isActive = !isActive;
+});
     
     
     
