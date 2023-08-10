@@ -76,10 +76,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        const target = document.querySelector(this.getAttribute('href'));
+
+        // considering that offsetHeight already stores the height of the navbar
+        const scrollToPosition = window.scrollY + target.getBoundingClientRect().top - offsetHeight;
+        
+        window.scrollTo({
+            top: scrollToPosition,
             behavior: 'smooth'
-             
         });
+        
         menu.classList.remove('max-h-96');
         menu.classList.add('max-h-0','md:h-auto');
         navbar.classList.add('transition', 'delay-800','duration-700');
