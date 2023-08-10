@@ -600,6 +600,10 @@ video {
   margin: auto;
 }
 
+.m-7{
+  margin: 1.75rem;
+}
+
 .mx-1{
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -651,8 +655,20 @@ video {
   margin-top: 2rem;
 }
 
-.ml-5{
-  margin-left: 1.25rem;
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
 }
 
 .inline-block{
@@ -667,10 +683,6 @@ video {
   display: none;
 }
 
-.h-10{
-  height: 2.5rem;
-}
-
 .h-12{
   height: 3rem;
 }
@@ -683,12 +695,12 @@ video {
   height: 15rem;
 }
 
-.h-64{
-  height: 16rem;
-}
-
 .h-full{
   height: 100%;
+}
+
+.h-64{
+  height: 16rem;
 }
 
 .max-h-0{
@@ -715,24 +727,28 @@ video {
   width: 5rem;
 }
 
-.w-32{
-  width: 8rem;
+.w-24{
+  width: 6rem;
 }
 
-.w-48{
-  width: 12rem;
+.w-28{
+  width: 7rem;
+}
+
+.w-52{
+  width: 13rem;
 }
 
 .w-6{
   width: 1.5rem;
 }
 
-.w-64{
-  width: 16rem;
+.w-60{
+  width: 15rem;
 }
 
-.w-72{
-  width: 18rem;
+.w-64{
+  width: 16rem;
 }
 
 .w-9{
@@ -746,6 +762,14 @@ video {
 .w-max{
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
+.w-72{
+  width: 18rem;
 }
 
 .max-w-screen-md{
@@ -895,19 +919,9 @@ video {
      object-fit: cover;
 }
 
-.object-fill{
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
 .object-top{
   -o-object-position: top;
      object-position: top;
-}
-
-.object-right{
-  -o-object-position: right;
-     object-position: right;
 }
 
 .p-1{
@@ -972,11 +986,6 @@ video {
 
 .font-body{
   font-family: Lora;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl{
@@ -1180,6 +1189,15 @@ b
   display: none;
 }
 
+#puppies {
+  left: 0;
+  transition: left 0.25s ease-in-out;
+}
+
+#puppies.active {
+  left: 96px;
+}
+
 .placeholder\:text-xl::-moz-placeholder{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1206,6 +1224,10 @@ b
 
   .sm\:m-4{
     margin: 1rem;
+  }
+
+  .sm\:m-auto{
+    margin: auto;
   }
 
   .sm\:mx-10{
@@ -1266,6 +1288,10 @@ b
 
   .md\:mt-7{
     margin-top: 1.75rem;
+  }
+
+  .md\:mt-8{
+    margin-top: 2rem;
   }
 
   .md\:block{
@@ -1410,14 +1436,6 @@ b
     margin-right: 7rem;
   }
 
-  .xl\:h-12{
-    height: 3rem;
-  }
-
-  .xl\:h-14{
-    height: 3.5rem;
-  }
-
   .xl\:h-lg-card-height{
     height: 34rem;
   }
@@ -1428,18 +1446,6 @@ b
 
   .xl\:w-2\/5{
     width: 40%;
-  }
-
-  .xl\:w-24{
-    width: 6rem;
-  }
-
-  .xl\:w-52{
-    width: 13rem;
-  }
-
-  .xl\:w-60{
-    width: 15rem;
   }
 
   .xl\:w-lg-card-width{
@@ -1480,6 +1486,3 @@ b
     border-radius: 1.5rem;
   }
 }
-
-
-

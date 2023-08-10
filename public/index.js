@@ -143,23 +143,39 @@ document.getElementById('showFormBtn').addEventListener('click', function() {
   });
   
 
-  function toggleLabelColors() {
     const switchEl = document.getElementById('switch');
     const puppiesEl = document.getElementById('puppies');
     const parentsEl = document.getElementById('parents');
+    const puppiesPage = document.getElementById('puppies-page');
+    const parentsPages = document.getElementById('parents-page');
 
-    if (switchEl.checked) {
-        puppiesEl.style.backgroundColor = 'transparent';
-        puppiesEl.style.color = 'white';
+    let isActive = false;
 
-        parentsEl.style.backgroundColor = 'black';
-        parentsEl.style.color = 'white';
-    } else {
-        puppiesEl.style.backgroundColor = 'black';
-        puppiesEl.style.color = 'white';
+    switchEl.addEventListener('click', () => {
+        if (isActive) {
+            puppiesEl.classList.toggle('active');
+            puppiesEl.innerText = 'Puppies';
+            
+         
+            puppiesPage.classList.remove('hidden');
+            puppiesPage.classList.add('md:grid');
+            parentsPages.classList.add('hidden');
 
-        parentsEl.style.backgroundColor = 'transparent';
-        parentsEl.style.color = 'black';
-    }
-}
+        } else {
+            puppiesEl.classList.toggle('active');
+            puppiesEl.innerText = 'Parents';
+            
+            puppiesPage.classList.remove('md:grid');
+            puppiesPage.classList.add('hidden');
+            parentsPages.classList.remove('hidden');
+        }
+        isActive = !isActive;
+    });
+    
+    
+    
+    
+    
+    
+
   

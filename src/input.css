@@ -84,4 +84,11 @@ b
 }
 
 
+#puppies {
+  left: 0;
+  transition: left 0.25s ease-in-out;
+}
 
+#puppies.active {
+  left: 96px;
+}
