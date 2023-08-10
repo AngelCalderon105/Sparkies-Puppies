@@ -1188,8 +1188,8 @@ video {
   transition-delay: 800ms;
 }
 
-.duration-200{
-  transition-duration: 200ms;
+.duration-250{
+  transition-duration: 250ms;
 }
 
 .duration-300{
@@ -1202,10 +1202,6 @@ video {
 
 .duration-800{
   transition-duration: 800ms;
-}
-
-.duration-250{
-  transition-duration: 250ms;
 }
 
 .ease-in-out{
