@@ -8,6 +8,7 @@ module.exports = {
       },
       transitionDuration: {
         '800': '800ms',
+        '250': '250ms'
       },
       height:{
         'card-height': '37rem',
