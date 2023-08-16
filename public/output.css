@@ -1333,16 +1333,8 @@ b
     height: 18rem;
   }
 
-  .sm\:w-3\/4{
-    width: 75%;
-  }
-
   .sm\:w-80{
     width: 20rem;
-  }
-
-  .sm\:w-11\/12{
-    width: 91.666667%;
   }
 
   .sm\:max-w-lg{
@@ -1448,10 +1440,6 @@ b
 
   .md\:max-h-full{
     max-height: 100%;
-  }
-
-  .md\:w-3\/4{
-    width: 75%;
   }
 
   .md\:w-11\/12{
