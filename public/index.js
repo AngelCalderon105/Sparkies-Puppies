@@ -127,13 +127,14 @@ const thankYouMessage = document.getElementById('thankYouMessage');
 document.getElementById('showFormBtn').addEventListener('click', function() {
     form.classList.remove('hidden');
     form.classList.add('flex','justify-center','items-center');
-  });
+});
   
-  document.getElementById('closeFormBtn').addEventListener('click', function() {
+document.getElementById('closeFormBtn').addEventListener('click', function() {
     form.classList.add('hidden');
     
-  });
-  document.getElementById('closeFormBtn2').addEventListener('click', function() {
+});
+  
+document.getElementById('closeFormBtn2').addEventListener('click', function() {
     form.classList.add('hidden');
     thankYouMessage.classList.add('hidden');
     formContainer.classList.remove('hidden');
@@ -141,10 +142,10 @@ document.getElementById('showFormBtn').addEventListener('click', function() {
     formContainer.classList.add('flex');
     
     
-  });
+});
   
 
-  const switchEl = document.getElementById('switch');
+const switchEl = document.getElementById('switch');
 const puppiesEl = document.getElementById('puppies');
 const parentsEl = document.getElementById('parents');
 const puppiesPage = document.getElementById('puppies-page');
@@ -173,7 +174,7 @@ switchEl.addEventListener('click', () => {
     
 
 document.addEventListener('DOMContentLoaded', function() {
-  new Splide('.splide', {
+  new Splide('#mainGallery', {
     focus: 'center',
     type: 'loop',
     autoplay: true,
@@ -182,6 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
     pauseOnHover: true,
     autoWidth: true,
     gap: '1rem',
+    lazyLoad: 'nearby',
     
     breakpoints: {
       1024:{
@@ -201,7 +203,58 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
   }).mount();
-
   
+  new Splide('#gallery1', {
+    focus: 'center',
+    type: 'loop',
+    autoplay: true,
+    height: '40rem',
+    pauseOnHover: true,
+    autoWidth: true,
+    
+    lazyLoad: 'nearby',
+    
+    breakpoints: {
+      1024:{
+        height: '35rem'
+      },
+      768: {
+        height: '30rem',
+      },
+      640: {
+        height: '25rem',
+       
+      },
+      500: {
+        height: '15rem',
+      
+      }
+
+    }
+  }).mount();
 });
 
+const galleryContainer = document.getElementById('puppy1');
+// const form = document.getElementById('reminderForm');
+// const button = document.getElementById('puppyButton1');
+
+
+
+
+document.getElementById('puppyButton1').addEventListener('click', function() {
+    galleryContainer.classList.remove('hidden');
+});
+  
+ document.getElementById('closePuppy1').addEventListener('click', function() {
+  galleryContainer.classList.add('hidden');
+    });
+  
+// document.getElementById('closeFormBtn2').addEventListener('click', function() {
+//     form.classList.add('hidden');
+//     thankYouMessage.classList.add('hidden');
+//     formContainer.classList.remove('hidden');
+
+//     formContainer.classList.add('flex');
+    
+    
+// });
