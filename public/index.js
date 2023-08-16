@@ -1,4 +1,3 @@
-
 const burger = document.querySelector('#hamburger');
 const menu = document.querySelector('#menu');
 const navbar = document.querySelector('header');
@@ -172,10 +171,37 @@ switchEl.addEventListener('click', () => {
   isActive = !isActive;
 });
     
+
+document.addEventListener('DOMContentLoaded', function() {
+  new Splide('.splide', {
+    focus: 'center',
+    type: 'loop',
+    autoplay: true,
+    padding: '5rem',
+    height: '40rem',
+    pauseOnHover: true,
+    autoWidth: true,
+    gap: '1rem',
     
-    
-    
-    
-    
+    breakpoints: {
+      1024:{
+        height: '35rem'
+      },
+      768: {
+        height: '30rem',
+      },
+      640: {
+        height: '25rem',
+       
+      },
+      500: {
+        height: '15rem',
+      
+      }
+
+    }
+  }).mount();
 
   
+});
+

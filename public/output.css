@@ -697,10 +697,6 @@ video {
   max-height: 24rem;
 }
 
-.min-h-screen{
-  min-height: 100vh;
-}
-
 .w-10\/12{
   width: 83.333333%;
 }
@@ -959,6 +955,11 @@ video {
   background-position: center;
 }
 
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1009,6 +1010,11 @@ video {
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-2{
@@ -1188,8 +1194,8 @@ video {
   transition-delay: 800ms;
 }
 
-.duration-200{
-  transition-duration: 200ms;
+.duration-250{
+  transition-duration: 250ms;
 }
 
 .duration-300{
@@ -1202,10 +1208,6 @@ video {
 
 .duration-800{
   transition-duration: 800ms;
-}
-
-.duration-250{
-  transition-duration: 250ms;
 }
 
 .ease-in-out{
@@ -1314,18 +1316,13 @@ b
     right: 1rem;
   }
 
-  .sm\:m-4{
-    margin: 1rem;
+  .sm\:m-3{
+    margin: 0.75rem;
   }
 
   .sm\:mx-10{
     margin-left: 2.5rem;
     margin-right: 2.5rem;
-  }
-
-  .sm\:mx-6{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
   }
 
   .sm\:hidden{
@@ -1336,8 +1333,16 @@ b
     height: 18rem;
   }
 
+  .sm\:w-3\/4{
+    width: 75%;
+  }
+
   .sm\:w-80{
     width: 20rem;
+  }
+
+  .sm\:w-11\/12{
+    width: 91.666667%;
   }
 
   .sm\:max-w-lg{
@@ -1400,6 +1405,11 @@ b
     margin-right: 0px;
   }
 
+  .md\:my-10{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
   .md\:mt-12{
     margin-top: 3rem;
   }
@@ -1438,6 +1448,14 @@ b
 
   .md\:max-h-full{
     max-height: 100%;
+  }
+
+  .md\:w-3\/4{
+    width: 75%;
+  }
+
+  .md\:w-11\/12{
+    width: 91.666667%;
   }
 
   .md\:max-w-3xl{
@@ -1502,14 +1520,19 @@ b
     line-height: 1.75rem;
   }
 
+  .group:hover .md\:group-hover\:opacity-30{
+    opacity: 0.3;
+  }
+
   .group:hover .md\:group-hover\:opacity-50{
     opacity: 0.5;
   }
 }
 
 @media (min-width: 1024px){
-  .lg\:m-6{
-    margin: 1.5rem;
+  .lg\:mx-6{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   .lg\:block{
@@ -1545,30 +1568,21 @@ b
     line-height: 2rem;
   }
 
-  .lg\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .lg\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
   }
-
-  .lg\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
 }
 
 @media (min-width: 1280px){
-  .xl\:mx-28{
-    margin-left: 7rem;
-    margin-right: 7rem;
+  .xl\:mx-32{
+    margin-left: 8rem;
+    margin-right: 8rem;
   }
 
-  .xl\:h-lg-card-height{
-    height: 34rem;
+  .xl\:mx-40{
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 
   .xl\:w-10\/12{
@@ -1579,8 +1593,8 @@ b
     width: 40%;
   }
 
-  .xl\:w-lg-card-width{
-    width: 35rem;
+  .xl\:w-3\/4{
+    width: 75%;
   }
 
   .xl\:max-w-7xl{
@@ -1596,16 +1610,6 @@ b
     padding-right: 2.5rem;
   }
 
-  .xl\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .xl\:text-7xl{
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
   .xl\:text-9xl{
     font-size: 8rem;
     line-height: 1;
@@ -1613,6 +1617,11 @@ b
 }
 
 @media (min-width: 1536px){
+  .\32xl\:mx-72{
+    margin-left: 18rem;
+    margin-right: 18rem;
+  }
+
   .\32xl\:rounded-3xl{
     border-radius: 1.5rem;
   }
