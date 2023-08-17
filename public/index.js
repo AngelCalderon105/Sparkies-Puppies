@@ -172,89 +172,63 @@ switchEl.addEventListener('click', () => {
   isActive = !isActive;
 });
     
+var commonSettings = {
+  focus: 'center',
+  type: 'loop',
+  autoplay: true,
+  padding: '5rem',
+  height: '40rem',
+  pauseOnHover: true,
+  autoWidth: true,
+  gap: '1rem',
+  lazyLoad: 'nearby',
+  
+  breakpoints: {
+    1024:{
+      height: '35rem'
+    },
+    768: {
+      height: '30rem',
+    },
+    640: {
+      height: '25rem',
+     
+    },
+    500: {
+      height: '15rem',
+    
+    }
+
+  }
+};
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
-  new Splide('#mainGallery', {
-    focus: 'center',
-    type: 'loop',
-    autoplay: true,
-    padding: '5rem',
-    height: '40rem',
-    pauseOnHover: true,
-    autoWidth: true,
-    gap: '1rem',
-    lazyLoad: 'nearby',
-    
-    breakpoints: {
-      1024:{
-        height: '35rem'
-      },
-      768: {
-        height: '30rem',
-      },
-      640: {
-        height: '25rem',
-       
-      },
-      500: {
-        height: '15rem',
-      
-      }
-
-    }
-  }).mount();
-  
-  new Splide('#gallery1', {
-    focus: 'center',
-    type: 'loop',
-    autoplay: true,
-    height: '40rem',
-    pauseOnHover: true,
-    autoWidth: true,
-    
-    lazyLoad: 'nearby',
-    
-    breakpoints: {
-      1024:{
-        height: '35rem'
-      },
-      768: {
-        height: '30rem',
-      },
-      640: {
-        height: '25rem',
-       
-      },
-      500: {
-        height: '15rem',
-      
-      }
-
-    }
-  }).mount();
+  new Splide('#mainGallery',commonSettings).mount();
 });
 
-const galleryContainer = document.getElementById('puppy1');
-// const form = document.getElementById('reminderForm');
-// const button = document.getElementById('puppyButton1');
+//collects all Galleries
+const gallery = document.querySelectorAll('.puppyGallery');
+const openGalleryBtn = document.querySelectorAll('.openBtn');
+const closeGalleryBtn = document.querySelectorAll('.closeBtn');
 
+const galleryContainer = document.querySelectorAll('.galleryContainer');
 
+for ( let i = 0; i < gallery.length; i++ ) {
+  new Splide(gallery[i],commonSettings).mount();
+}
 
-
-document.getElementById('puppyButton1').addEventListener('click', function() {
-    galleryContainer.classList.remove('hidden');
+openGalleryBtn.forEach(function(btn, index) {
+  btn.addEventListener('click', () => {
+  galleryContainer[index].classList.remove('hidden');
+  })
 });
-  
- document.getElementById('closePuppy1').addEventListener('click', function() {
-  galleryContainer.classList.add('hidden');
-    });
-  
-// document.getElementById('closeFormBtn2').addEventListener('click', function() {
-//     form.classList.add('hidden');
-//     thankYouMessage.classList.add('hidden');
-//     formContainer.classList.remove('hidden');
 
-//     formContainer.classList.add('flex');
-    
-    
-// });
+closeGalleryBtn.forEach(function(btn, index) {
+  btn.addEventListener('click', () => {
+  galleryContainer[index].classList.add('hidden');
+  })
+});
+
+
