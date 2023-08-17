@@ -171,7 +171,25 @@ switchEl.addEventListener('click', () => {
   }
   isActive = !isActive;
 });
-    
+//faq
+
+const tab = document.querySelectorAll('.faqTab');
+const answer = document.querySelectorAll('.faqAnswer');
+
+
+tab.forEach(function(tab, index) {
+tab.addEventListener('click' , () => {
+  if(answer[index].classList.contains('hidden')) {
+    answer[index].classList.remove('hidden');
+  }
+  else {
+    answer[index].classList.add('hidden');
+
+  }
+})
+});
+
+
 var puppyGallerySettings = {
   focus: 'center',
   type: 'loop',
@@ -203,7 +221,7 @@ var mainGallerySettings = {
     },
     500: {
       height: '15rem',
-    
+
     }
 
   }
