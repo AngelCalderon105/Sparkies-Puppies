@@ -1,4 +1,3 @@
-
 const burger = document.querySelector('#hamburger');
 const menu = document.querySelector('#menu');
 const navbar = document.querySelector('header');
@@ -128,13 +127,14 @@ const thankYouMessage = document.getElementById('thankYouMessage');
 document.getElementById('showFormBtn').addEventListener('click', function() {
     form.classList.remove('hidden');
     form.classList.add('flex','justify-center','items-center');
-  });
+});
   
-  document.getElementById('closeFormBtn').addEventListener('click', function() {
+document.getElementById('closeFormBtn').addEventListener('click', function() {
     form.classList.add('hidden');
     
-  });
-  document.getElementById('closeFormBtn2').addEventListener('click', function() {
+});
+  
+document.getElementById('closeFormBtn2').addEventListener('click', function() {
     form.classList.add('hidden');
     thankYouMessage.classList.add('hidden');
     formContainer.classList.remove('hidden');
@@ -142,10 +142,10 @@ document.getElementById('showFormBtn').addEventListener('click', function() {
     formContainer.classList.add('flex');
     
     
-  });
+});
   
 
-  const switchEl = document.getElementById('switch');
+const switchEl = document.getElementById('switch');
 const puppiesEl = document.getElementById('puppies');
 const parentsEl = document.getElementById('parents');
 const puppiesPage = document.getElementById('puppies-page');
@@ -171,11 +171,90 @@ switchEl.addEventListener('click', () => {
   }
   isActive = !isActive;
 });
-    
-    
-    
-    
-    
-    
+//faq
 
+const tab = document.querySelectorAll('.faqTab');
+const answer = document.querySelectorAll('.faqAnswer');
+
+
+tab.forEach(function(tab, index) {
+tab.addEventListener('click' , () => {
+  if(answer[index].classList.contains('hidden')) {
+    answer[index].classList.remove('hidden');
+  }
+  else {
+    answer[index].classList.add('hidden');
+
+  }
+})
+});
+
+
+var puppyGallerySettings = {
+  focus: 'center',
+  type: 'loop',
+  autoplay: true,
+  pauseOnHover: true,
+  lazyLoad: 'nearby',
+};
+
+var mainGallerySettings = {
+  focus: 'center',
+  type: 'loop',
+  autoplay: true,
+  height: '40rem',
+  autoWidth: true,
+  pauseOnHover: true,
+  gap: '1rem',
+  lazyLoad: 'nearby',
   
+  breakpoints: {
+    1024:{
+      height: '35rem'
+    },
+    768: {
+      height: '30rem',
+    },
+    640: {
+      height: '25rem',
+     
+    },
+    500: {
+      height: '15rem',
+
+    }
+
+  }
+};
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  new Splide('#mainGallery',mainGallerySettings).mount();
+});
+
+//collects all Galleries
+const gallery = document.querySelectorAll('.puppyGallery');
+const openGalleryBtn = document.querySelectorAll('.openBtn');
+const closeGalleryBtn = document.querySelectorAll('.closeBtn');
+const galleryContainer = document.querySelectorAll('.galleryContainer');
+
+for ( let i = 0; i < gallery.length; i++ ) {
+  new Splide(gallery[i], puppyGallerySettings).mount();
+}
+
+openGalleryBtn.forEach(function(btn, index) {
+  btn.addEventListener('click', () => {
+  galleryContainer[index].classList.remove('hidden');
+  })
+});
+
+closeGalleryBtn.forEach(function(btn, index) {
+  btn.addEventListener('click', () => {
+  galleryContainer[index].classList.add('hidden');
+  })
+});
+
+
