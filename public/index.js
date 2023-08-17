@@ -176,27 +176,8 @@ var puppyGallerySettings = {
   focus: 'center',
   type: 'loop',
   autoplay: true,
-  height: '40rem',
   pauseOnHover: true,
   lazyLoad: 'nearby',
-  
-  breakpoints: {
-    1024:{
-      height: '35rem'
-    },
-    768: {
-      height: '30rem',
-    },
-    640: {
-      height: '25rem',
-     
-    },
-    500: {
-      height: '15rem',
-    
-    }
-
-  }
 };
 
 var mainGallerySettings = {
