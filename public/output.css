@@ -1695,6 +1695,14 @@ b
   .group:hover .lg\:group-hover\:opacity-100{
     opacity: 1;
   }
+
+  .group:hover .lg\:group-hover\:opacity-30{
+    opacity: 0.3;
+  }
+
+  .group:hover .lg\:group-hover\:opacity-50{
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: 1280px){
