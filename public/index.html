@@ -8,358 +8,412 @@
     <link rel="stylesheet" href="output.css">
     <script src="index.js" defer></script>
     <script src="firbase.js" type="module"></script>
-   
+
 </head>
 
 <body class=" text-white font-body">
     <!-- NAVBAR -->
-    <header class = "text-primary-white fixed top-0 w-full z-50">
+    <header class="text-primary-white fixed top-0 w-full z-50">
         <!-- HAMBUGER -->
-           <div class = "p-3 md:hidden flex justify-between" >
-                <div id ="hamburger">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 ">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                     </svg>
-                </div>
-                <div class = "flex justify-center items-center">
-          
-                     <h2 class = "hidden" id = "mobile-title">Calderon Bulldogs</h2>
-                </div>
-                 <img src="img/puppy_logo.webp" alt="" class = "w-9 hidden" id = "logo"> 
+        <div class="p-3 md:hidden flex justify-between">
+            <div id="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-9 ">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
             </div>
+            <div class="flex justify-center items-center">
 
-       <nav class = " w-full max-h-0 md:max-h-full overflow-hidden transition-all duration-800 ease-in-out  rounded-b-lg  text-xl  md:flex justify-between" id = "menu">    
-           <ul class = "md:flex">
-               <li class = "p-3">
-                   <a href="#home">Home</a>
-               </li>
-               <li class = "p-3">
-                   <a href="#about">About</a>
-               </li>
-               <li class = "p-3">
-                   <a href="#gallery">Gallery</a>
-               </li>
-           </ul>
-           <a href="" class = ""> 
-           <h2 class ="p-3 hidden md:inline-block">Calderon Bulldogs</h2> 
-           </a>
-               
-           <ul class = "md:flex">
-               <li class = "p-3">
-               <a href="#ap">Available Puppies</a>
-               </li>
-               <li class = "p-3">
-                   <a href="#ss">Stud Service</a>
-               </li>
-           </ul>
-       </nav>
-   </header> 
-   
-   <!--  Home Page Design -->
-    <div class = "flex justify-center xl:justify-start items-center  bg-fixed bg-cover bg-center " id="home">
-              
-               <div class = " text-primary-white w-11/12 xl:w-2/5 text-center xl:px-10 ">
-                   <div class = "text-6xl md:text-8xl xl:text-9xl">
-                       <p class = "">Calderon Bulldogs</p>
-                   </div>
-                   <p class = " text-xl md:text-3xl mt-3 md:mt-7  ">From Our Family to Yours: Delivering Love, Trust, & Quality in Every Pup.</p>
-                   <div class = "mt-6 md:mt-12 " >
-                       <a href = "#footer" class = "bg-primary-white border-2 text-primary-black rounded-3xl md:text-xl px-14 py-1 ">Contact Us </a> 
-                   </div> 
-               </div>
+                <h2 class="hidden" id="mobile-title">Calderon Bulldogs</h2>
+            </div>
+            <img src="img/puppy_logo.webp" alt="" class="w-9 hidden" id="logo">
+        </div>
+
+        <nav class=" w-full max-h-0 md:max-h-full overflow-hidden transition-all duration-800 ease-in-out  rounded-b-lg  text-xl  md:flex justify-between"
+            id="menu">
+            <ul class="md:flex">
+                <li class="p-3">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="p-3">
+                    <a href="#about">About</a>
+                </li>
+                <li class="p-3">
+                    <a href="#gallery">Gallery</a>
+                </li>
+            </ul>
+            <a href="" class="">
+                <h2 class="p-3 hidden md:inline-block">Calderon Bulldogs</h2>
+            </a>
+
+            <ul class="md:flex">
+                <li class="p-3">
+                    <a href="#ap">Available Puppies</a>
+                </li>
+                <li class="p-3">
+                    <a href="#ss">Stud Service</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--  Home Page Design -->
+    <div class="flex justify-center xl:justify-start items-center  bg-fixed bg-cover bg-center " id="home">
+
+        <div class=" text-primary-white w-11/12 xl:w-2/5 text-center xl:px-10 ">
+            <div class="text-6xl md:text-8xl xl:text-9xl">
+                <p class="">Calderon Bulldogs</p>
+            </div>
+            <p class=" text-xl md:text-3xl mt-3 md:mt-7  ">From Our Family to Yours: Delivering Love, Trust, & Quality
+                in Every Pup.</p>
+            <div class="mt-6 md:mt-12 ">
+                <a href="#footer"
+                    class="bg-primary-white border-2 text-primary-black rounded-3xl md:text-xl px-14 py-1 ">Contact Us
+                </a>
+            </div>
+        </div>
     </div>
-       <!-- Timer Countdown -->
-       <div class = "text-primary-black text-center text-3xl md:text-4xl" id = "timer">
-        <div class = "flex flex-col md:flex-row justify-center items-center md:gap-10 lg:gap-20 py-4 md:p-2" id = "timer-content">
-            
+    <!-- Timer Countdown -->
+    <div class="text-primary-black text-center text-3xl md:text-4xl" id="timer">
+        <div class="flex flex-col md:flex-row justify-center items-center md:gap-10 lg:gap-20 py-4 md:p-2"
+            id="timer-content">
+
             <h1 class="">New Litter Coming In</h1>
-            <div class = "flex justify-center w-max gap-4 md:gap-5 md:m-4 text-center">
+            <div class="flex justify-center w-max gap-4 md:gap-5 md:m-4 text-center">
                 <div class="flex flex-col items-center w-12">
-                <span class = "p-2 md:p-3" id ="daysLeft">45</span>
-                <span class = " text-xl md:text-xl">Days</span>
+                    <span class="p-2 md:p-3" id="daysLeft">45</span>
+                    <span class=" text-xl md:text-xl">Days</span>
                 </div>
                 <div class="flex flex-col items-center w-12 ">
-                    <span class = "p-2 md:p-3" id ="hoursLeft">45</span>
-                    <span class = " text-xl md:text-xl">Hours</span>
+                    <span class="p-2 md:p-3" id="hoursLeft">45</span>
+                    <span class=" text-xl md:text-xl">Hours</span>
                 </div>
                 <div class="flex flex-col items-center w-12">
-                    <span class = "p-2 md:p-3" id ="minLeft">45</span>
-                    <span class = " text-xl md:text-xl">Min</span>
+                    <span class="p-2 md:p-3" id="minLeft">45</span>
+                    <span class=" text-xl md:text-xl">Min</span>
                 </div>
                 <div class="flex flex-col items-center  w-12">
-                    <span class = "p-2 md:p-3" id ="secLeft">45</span>
-                    <span class = " text-xl md:text-xl">Sec</span>
+                    <span class="p-2 md:p-3" id="secLeft">45</span>
+                    <span class=" text-xl md:text-xl">Sec</span>
                 </div>
-               
+
             </div>
-            <button class = " bg-primary-black text-primary-white text-xl rounded-xl mt-2 px-6 md:px-12 py-3 shadow-md shadow-black" id="showFormBtn">Notify Me</button>
-           
+            <button
+                class=" bg-primary-black text-primary-white text-xl rounded-xl mt-2 px-6 md:px-12 py-3 shadow-md shadow-black"
+                id="showFormBtn">Notify Me</button>
+
         </div>
         <div id="reminderForm" class="hidden">
-            <form action="" method="post" class = "w-11/12 max-w-sm sm:max-w-lg relative">
-                <div id = "form-container" class= "flex flex-col justify-center items-center gap-8">
-                <div class = " absolute top-1 right-3 sm:right-4" >
-                    <button type = "button" id = "closeFormBtn">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                      </button> 
+            <form action="" method="post" class="w-11/12 max-w-sm sm:max-w-lg relative">
+                <div id="form-container" class="flex flex-col justify-center items-center gap-8">
+                    <div class=" absolute top-1 right-3 sm:right-4">
+                        <button type="button" id="closeFormBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h1 class="">Puppy Notification!</h1>
+                    <p class="text-base">Feel free to leave your contact info and <br>
+                        we'll send you a text when our litter is ready!</p>
+
+                    <input type="name" name="name" id="input-name" placeholder="Name" required
+                        class="w-full text-xl placeholder:text-xl border-b-2 focus:outline-none">
+                    <input type="email" name="email" placeholder="Email" id="input-email"
+                        class="w-full text-xl placeholder:text-xl border-b-2 focus:outline-none">
+                    <input type="text" name="phone" placeholder="Phone" id="input-phone" required
+                        class="w-full text-xl placeholder:text-xl border-b-2 focus:outline-none">
+                    <button id="form-submit"
+                        class="py-2 px-20 sm:py-3 sm:px-24 text-white text-lg bg-primary-black rounded-3xl shadow-md shadow-black"
+                        type="submit">Submit</button>
                 </div>
-                <h1 class = "">Puppy Notification!</h1>
-                <p class="text-base">Feel free to leave your contact info and <br>
-                we'll send you a text when our litter is ready!</p>
-                
-              <input type="name" name="name" id = "input-name" placeholder="Name" required class = "w-full text-xl placeholder:text-xl border-b-2 focus:outline-none">
-              <input type="email" name="email" placeholder="Email" id = "input-email" class = "w-full text-xl placeholder:text-xl border-b-2 focus:outline-none">
-              <input type="text" name="phone" placeholder="Phone" id = "input-phone" required class = "w-full text-xl placeholder:text-xl border-b-2 focus:outline-none">
-              <button id ="form-submit" class = "py-2 px-20 sm:py-3 sm:px-24 text-white text-lg bg-primary-black rounded-3xl shadow-md shadow-black" type = "submit">Submit</button>
-            </div>
-            <div id="thankYouMessage" class="hidden">
-                <div class = " absolute top-1 right-3 sm:right-4" >
-                    <button type = "button" id = "closeFormBtn2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                      </button> 
+                <div id="thankYouMessage" class="hidden">
+                    <div class=" absolute top-1 right-3 sm:right-4">
+                        <button type="button" id="closeFormBtn2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-col justify-center items-center gap-5">
+                        <h1>Thank you!</h1>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-20 ">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+
+                        <p class="text-xl">We'll send you a notification when the puppies are ready.</p>
+                    </div>
                 </div>
-                <div class = "flex flex-col justify-center items-center gap-5">
-                <h1>Thank you!</h1>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 ">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  
-                <p class = "text-xl">We'll send you a notification when the puppies are ready.</p>
-            </div>
-            </div>
 
             </form>
-            
-            
-          </div>
 
-       </div>
-       <!--BACKGROUND COLOR-->
-       <div class="min-h-screen bg-white " id = "ap">
-        <!--CONTENT SECTION--> 
-        <div class="flex flex-col justify-center items-center  ">
-        <h1 class="text-primary-black m-10 text-center text-3xl sm:text-4xl lg:text-6xl xl:text-7xl">Available Puppies</h1> 
-       
-        <div class="relative rounded-full bg-primary-gray overflow-hidden w-52 mb-10">
-            <input type="checkbox" id="switch" class="hidden">
-            <label for="switch" class="flex items-center cursor-pointer w-60 h-12 relative overflow-hidden">
-              <span id="puppies" class="flex items-center justify-center rounded-full bg-black w-28 h-12 absolute transition-transform duration-250 ease-in-out transform translate-x-0">
-                Puppies
-              </span>
-              <span id="parents" class="flex items-center justify-center rounded-full text-black w-28 h-12">
-                Puppies
-              </span>
-              <span id="parents" class="flex items-center justify-center rounded-full text-black w-24 h-12">
-                Parents
-              </span>
-            </label>
-          </div>
 
-          
-    
-    </div>
-        <div class="flex flex-col items-center justify-center sm:mx-10 xl:mx-28 gap-16 md:grid md:grid-cols-2 mb-14 " id="puppies-page">
-            <div class="max-w-screen-md flex flex-col justify-center m-auto">
-                <!-- Responsive Card with Overlay Text -->
-                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
-                    <!-- Image as Background -->
-                    <img src="img/card.webp" alt="Image" class="absolute w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300"></div>
-                    <!-- Overlay Content -->
-                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
-                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Available</h1>
-                    </div>
-                    <div class="absolute bottom-3 right-3 text-white">
-                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right"> 
-                            Male <br>
-                            7 weeks <br>
-                            Chocolate Tri <br>
-                        </h2>
-                    </div>
-                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
-                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
-                </div>
-                <div class= "flex justify-center lg:hidden mt-6 md:mt-8">
-                    <button class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
-                        Gallery
-                    </button>
-                </div>
-            </div>
-            
-         
-            
-          
-        
-        
-            <div class="max-w-screen-md flex flex-col justify-center m-auto">
-                <!-- Responsive Card with Overlay Text -->
-                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
-                    <!-- Image as Background -->
-                    <img src="img/card.webp" alt="Image" class="absolute w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300"></div>
-                    <!-- Overlay Content -->
-                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
-                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Available</h1>
-                    </div>
-                    <div class="absolute bottom-3 right-3 text-white">
-                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right"> 
-                            Male <br>
-                            7 weeks <br>
-                            Chocolate Tri <br>
-                        </h2>
-                    </div>
-                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
-                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
-                </div>
-                <div class= "flex justify-center lg:hidden mt-6 md:mt-8">
-                    <button class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
-                        Gallery
-                    </button>
-                </div>
-            </div>
-            
-            <div class="max-w-screen-md flex flex-col justify-center m-auto">
-                <!-- Responsive Card with Overlay Text -->
-                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
-                    <!-- Image as Background -->
-                    <img src="img/card.webp" alt="Image" class="absolute w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300"></div>
-                    <!-- Overlay Content -->
-                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
-                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Available</h1>
-                    </div>
-                    <div class="absolute bottom-3 right-3 text-white">
-                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right"> 
-                            Male <br>
-                            7 weeks <br>
-                            Chocolate Tri <br>
-                        </h2>
-                    </div>
-                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
-                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
-                </div>
-                <div class= "flex justify-center lg:hidden mt-6 md:mt-8">
-                    <button class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
-                        Gallery
-                    </button>
-                </div>
-            </div>
-        
-            <div class="max-w-screen-md flex flex-col justify-center m-auto">
-                <!-- Responsive Card with Overlay Text -->
-                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
-                    <!-- Image as Background -->
-                    <img src="img/card.webp" alt="Image" class="absolute w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300"></div>
-                    <!-- Overlay Content -->
-                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
-                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Available</h1>
-                    </div>
-                    <div class="absolute bottom-3 right-3 text-white">
-                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right"> 
-                            Male <br>
-                            7 weeks <br>
-                            Chocolate Tri <br>
-                        </h2>
-                    </div>
-                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
-                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
-                </div>
-                <div class= "flex justify-center lg:hidden mt-6 md:mt-8">
-                    <button class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
-                        Gallery
-                    </button>
-                </div>
-            </div>
-            
-           
-    </div>
-    <!--PARENT PAGE BACKGROUND-->
-    <div class=" hidden" id="parents-page">
-
-        <div class="flex flex-col items-center justify-center sm:mx-10 xl:mx-28 gap-16 md:grid md:grid-cols-2 mb-14 ">
-            <div class="max-w-screen-md flex flex-col justify-center m-auto">
-                <!-- Responsive Card with Overlay Text -->
-                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
-                    <!-- Image as Background -->
-                    <img src="img/KratosParentCard.webp" alt="Image" class="absolute w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300"></div>
-                    <!-- Overlay Content -->
-                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
-                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Father</h1>
-                    </div>
-                    <div class="absolute bottom-3 right-3 text-white">
-                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right"> 
-                            Male <br>
-                            1 year old <br>
-                            Chocolate Tri <br>
-                        </h2>
-                    </div>
-                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
-                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
-                </div>
-                <div class= "flex justify-center lg:hidden mt-6 md:mt-8">
-                    <button class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
-                        Gallery
-                    </button>
-                </div>
-            </div>
-            
-            
-            <div class="max-w-screen-md flex flex-col justify-center m-auto">
-                <!-- Responsive Card with Overlay Text -->
-                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
-                    <!-- Image as Background -->
-                    <img src="img/CocoParentCard.webp" alt="Image" class="absolute w-full h-full object-top">
-                    <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300"></div>
-                    <!-- Overlay Content -->
-                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
-                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Mother</h1>
-                    </div>
-                    <div class="absolute bottom-3 right-3 text-white">
-                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right">     
-                         Female <br>
-                        2 years old<br>
-                        Chocolate Tri <br>
-                        </h2>
-                    </div>
-                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
-                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
-                </div>
-                <div class= "flex justify-center lg:hidden mt-6 md:mt-8">
-                    <button class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
-                        Gallery
-                    </button>
-                </div>
-            </div>
-           
         </div>
-     </div>
+
     </div>
-        
-        
+    <!--BACKGROUND COLOR-->
+    <div class="min-h-screen bg-white " id="ap">
+        <!--CONTENT SECTION-->
+        <div class="flex flex-col justify-center items-center  ">
+            <h1 class="text-primary-black m-10 text-center text-3xl sm:text-4xl lg:text-6xl xl:text-7xl">Available
+                Puppies</h1>
+
+            <div class="relative rounded-full bg-primary-gray overflow-hidden w-52 mb-10">
+                <input type="checkbox" id="switch" class="hidden">
+                <label for="switch" class="flex items-center cursor-pointer w-60 h-12 relative overflow-hidden">
+                    <span id="puppies"
+                        class="flex items-center justify-center rounded-full bg-black w-28 h-12 absolute transition-transform duration-250 ease-in-out transform translate-x-0">
+                        Puppies
+                    </span>
+                    <span id="parents" class="flex items-center justify-center rounded-full text-black w-28 h-12">
+                        Puppies
+                    </span>
+                    <span id="parents" class="flex items-center justify-center rounded-full text-black w-24 h-12">
+                        Parents
+                    </span>
+                </label>
+            </div>
+
+
+
+        </div>
+        <div class="flex flex-col items-center justify-center sm:mx-10 xl:mx-28 gap-16 md:grid md:grid-cols-2 mb-14 "
+            id="puppies-page">
+            <div class="max-w-screen-md flex flex-col justify-center m-auto">
+                <!-- Responsive Card with Overlay Text -->
+                <div
+                    class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
+                    <!-- Image as Background -->
+                    <img src="img/card.webp" alt="Image" class="absolute w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300">
+                    </div>
+                    <!-- Overlay Content -->
+                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
+                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Available</h1>
+                    </div>
+                    <div class="absolute bottom-3 right-3 text-white">
+                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right">
+                            Male <br>
+                            7 weeks <br>
+                            Chocolate Tri <br>
+                        </h2>
+                    </div>
+                    <button
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
+                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
+                </div>
+                <div class="flex justify-center lg:hidden mt-6 md:mt-8">
+                    <button
+                        class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
+                        Gallery
+                    </button>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="max-w-screen-md flex flex-col justify-center m-auto">
+                <!-- Responsive Card with Overlay Text -->
+                <div
+                    class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
+                    <!-- Image as Background -->
+                    <img src="img/card.webp" alt="Image" class="absolute w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300">
+                    </div>
+                    <!-- Overlay Content -->
+                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
+                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Available</h1>
+                    </div>
+                    <div class="absolute bottom-3 right-3 text-white">
+                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right">
+                            Male <br>
+                            7 weeks <br>
+                            Chocolate Tri <br>
+                        </h2>
+                    </div>
+                    <button
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
+                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
+                </div>
+                <div class="flex justify-center lg:hidden mt-6 md:mt-8">
+                    <button
+                        class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
+                        Gallery
+                    </button>
+                </div>
+            </div>
+
+            <div class="max-w-screen-md flex flex-col justify-center m-auto">
+                <!-- Responsive Card with Overlay Text -->
+                <div
+                    class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
+                    <!-- Image as Background -->
+                    <img src="img/card.webp" alt="Image" class="absolute w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300">
+                    </div>
+                    <!-- Overlay Content -->
+                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
+                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Available</h1>
+                    </div>
+                    <div class="absolute bottom-3 right-3 text-white">
+                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right">
+                            Male <br>
+                            7 weeks <br>
+                            Chocolate Tri <br>
+                        </h2>
+                    </div>
+                    <button
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
+                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
+                </div>
+                <div class="flex justify-center lg:hidden mt-6 md:mt-8">
+                    <button
+                        class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
+                        Gallery
+                    </button>
+                </div>
+            </div>
+
+            <div class="max-w-screen-md flex flex-col justify-center m-auto">
+                <!-- Responsive Card with Overlay Text -->
+                <div
+                    class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
+                    <!-- Image as Background -->
+                    <img src="img/card.webp" alt="Image" class="absolute w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300">
+                    </div>
+                    <!-- Overlay Content -->
+                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
+                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Available</h1>
+                    </div>
+                    <div class="absolute bottom-3 right-3 text-white">
+                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right">
+                            Male <br>
+                            7 weeks <br>
+                            Chocolate Tri <br>
+                        </h2>
+                    </div>
+                    <button
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
+                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
+                </div>
+                <div class="flex justify-center lg:hidden mt-6 md:mt-8">
+                    <button
+                        class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
+                        Gallery
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+        <!--PARENT PAGE BACKGROUND-->
+        <div class=" hidden" id="parents-page">
+
+            <div
+                class="flex flex-col items-center justify-center sm:mx-10 xl:mx-28 gap-16 md:grid md:grid-cols-2 mb-14 ">
+                <div class="max-w-screen-md flex flex-col justify-center m-auto">
+                    <!-- Responsive Card with Overlay Text -->
+                    <div
+                        class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
+                        <!-- Image as Background -->
+                        <img src="img/KratosParentCard.webp" alt="Image" class="absolute w-full h-full object-cover">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300">
+                        </div>
+                        <!-- Overlay Content -->
+                        <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
+                            <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Father</h1>
+                        </div>
+                        <div class="absolute bottom-3 right-3 text-white">
+                            <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right">
+                                Male <br>
+                                1 year old <br>
+                                Chocolate Tri <br>
+                            </h2>
+                        </div>
+                        <button
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
+                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
+                    </div>
+                    <div class="flex justify-center lg:hidden mt-6 md:mt-8">
+                        <button
+                            class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
+                            Gallery
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="max-w-screen-md flex flex-col justify-center m-auto">
+                    <!-- Responsive Card with Overlay Text -->
+                    <div
+                        class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
+                        <!-- Image as Background -->
+                        <img src="img/CocoParentCard.webp" alt="Image" class="absolute w-full h-full object-top">
+                        <div
+                            class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300">
+                        </div>
+                        <!-- Overlay Content -->
+                        <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
+                            <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Mother</h1>
+                        </div>
+                        <div class="absolute bottom-3 right-3 text-white">
+                            <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right">
+                                Female <br>
+                                2 years old<br>
+                                Chocolate Tri <br>
+                            </h2>
+                        </div>
+                        <button
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
+                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
+                    </div>
+                    <div class="flex justify-center lg:hidden mt-6 md:mt-8">
+                        <button
+                            class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
+                            Gallery
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     </div>
     <!--background section-->
     <div class=" bg-lighter-white my-5 pb-10" id="about">
         <!--CONTENT SECTION-->
-        <div  class="flex flex-col items-center justify-center "> 
+        <div class="flex flex-col items-center justify-center ">
             <div class="flex flex-col-reverse md:flex-col items-center">
-            <div class="bg-stone-300 w-full flex justify-center mb-5 ">
-                <img class="w-full rounded-xl m-1 md:m-4 2xl:rounded-3xl xl:w-10/12" src="img/Kratos.webp" alt="">
+                <div class="bg-stone-300 w-full flex justify-center mb-5 ">
+                    <img class="w-full rounded-xl m-1 md:m-4 2xl:rounded-3xl xl:w-10/12" src="img/Kratos.webp" alt="">
+                </div>
+                <div class="text-primary-black text-5xl my-10 tracking-wider text-center">About Us</div>
             </div>
-        <div class="text-primary-black text-5xl my-10 tracking-wider text-center">About Us</div>
-    </div>
-            <div class="text-primary-black mx-5 mt-1 md:mt-12 sm:max-w-xl text-lg text-center md:max-w-3xl md:text-lg lg:max-w-4xl lg:text-2xl xl:max-w-7xl leading-loose  px-3 sm:px-9">
+            <div
+                class="text-primary-black mx-5 mt-1 md:mt-12 sm:max-w-xl text-lg text-center md:max-w-3xl md:text-lg lg:max-w-4xl lg:text-2xl xl:max-w-7xl leading-loose  px-3 sm:px-9">
                 <p class="leading-loose">
-                    Welcome to our family-owned bulldog breeding business! We are based in Santa Ana, serving our community
-                    with love since 2018. We specialize in raising high-quality bulldogs, ensuring each puppy's best care
-                    from birth to their new homes. Our family is passionate about bulldogs and committed to closely working
-                    with our customers to find their perfect new family. With our great knowledge of puppy care and offering
-                    stud services, we provide an all-around exceptional experience. Choose us for a seamless transition into
+                    Welcome to our family-owned bulldog breeding business! We are based in Santa Ana, serving our
+                    community
+                    with love since 2018. We specialize in raising high-quality bulldogs, ensuring each puppy's best
+                    care
+                    from birth to their new homes. Our family is passionate about bulldogs and committed to closely
+                    working
+                    with our customers to find their perfect new family. With our great knowledge of puppy care and
+                    offering
+                    stud services, we provide an all-around exceptional experience. Choose us for a seamless transition
+                    into
                     a lifetime of happiness with your new bulldog companion.
                     <br><br>-- The Calderon Family
                 </p>
@@ -367,7 +421,200 @@
         </div>
     </div>
 
-<!-- FOOTER -->
+    <!-- FAQ -->
+    <div class="flex flex-col items-center bg-white text-primary-black pb-10">
+
+        <p class="text-3xl">FAQ</p>
+
+        <div class="flex flex-col border-b border-gray-400 mt-10 pb-4 2xl:2/5 md:w-3/5 w-11/12 cursor-pointer faqTab">
+            <div class="inline-flex justify-between mx-2">
+                <p class="font-semi-bold">When can I take My puppy home?</p>
+                <svg class="w-4 ml-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+                    style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill="" transform="rotate(90)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill="#000000"
+                            d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                            style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill=""></path>
+                    </g>
+                </svg>
+            </div>
+            <p class="mt-5 mx-2 hidden faqAnswer">
+                You will be able to get your puppy home once they are accustomed to dry food and water which happens at
+                around
+                8 weeks old
+            </p>
+        </div>
+        <div class="flex flex-col border-b border-gray-400 mt-10 pb-4 2xl:2/5 md:w-3/5 w-11/12 cursor-pointer faqTab">
+
+            <div class="inline-flex justify-between mx-2">
+
+
+                <p class="font-semi-bold">Are the Puppies Vaccinated and Dewormed?</p>
+
+                <svg class="w-4 ml-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+                    style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill="" transform="rotate(90)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill="#000000"
+                            d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                            style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill=""></path>
+                    </g>
+                </svg>
+
+            </div>
+            <p class="mt-5 mx-2 hidden faqAnswer">
+                We adhere to veterinary guidelines, ensuring that your puppy receives three sets of essential
+                vaccinations and two courses of deworming treatments prior to adoption.
+            </p>
+        </div>
+        <div class="flex flex-col border-b border-gray-400 mt-10 pb-4 2xl:2/5 md:w-3/5 w-11/12 cursor-pointer faqTab">
+
+            <div class="inline-flex justify-between mx-2">
+
+
+                <p class="font-semi-bold">Are the Puppies Registered?</p>
+
+                <svg class="w-4 ml-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+                    style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill="" transform="rotate(90)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill="#000000"
+                            d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                            style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill=""></path>
+                    </g>
+                </svg>
+
+            </div>
+            <p class="mt-5 mx-2 hidden faqAnswer">
+                All of our bulldogs are pure bread and registered by the American kennel Club (AKC)
+            </p>
+        </div>
+        <div class="flex flex-col border-b border-gray-400 mt-10 pb-4 2xl:2/5 md:w-3/5 w-11/12 cursor-pointer faqTab">
+
+            <div class="inline-flex justify-between mx-2">
+
+
+                <p class="font-semi-bold">Can I meet the puppies parents?</p>
+
+                <svg class="w-4 ml-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+                    style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill="" transform="rotate(90)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill="#000000"
+                            d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                            style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill=""></path>
+                    </g>
+                </svg>
+
+            </div>
+            <p class="mt-5 mx-2 hidden faqAnswer">
+                Certainly you are welcome to come meet the parents just give us a call!
+            </p>
+        </div>
+        <div class="flex flex-col border-b border-gray-400 mt-10 pb-4 2xl:2/5 md:w-3/5 w-11/12 cursor-pointer faqTab">
+
+            <div class="inline-flex justify-between mx-2">
+
+
+                <p class="font-semi-bold">Are the puppies potty trained?</p>
+
+                <svg class="w-4 ml-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+                    style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill="" transform="rotate(90)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill="#000000"
+                            d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                            style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill=""></path>
+                    </g>
+                </svg>
+
+            </div>
+            <p class="mt-5 mx-2 hidden faqAnswer">
+                Certainly, we initiate potty training with the puppies, but it's important to retrain them to adapt to your specific schedule and surroundings.
+            </p>
+        </div>
+        <div class="flex flex-col border-b border-gray-400 mt-10 pb-4 2xl:2/5 md:w-3/5 w-11/12 cursor-pointer faqTab">
+
+            <div class="inline-flex justify-between mx-2">
+
+
+                <p class="font-semi-bold">Can I reserve my puppy?</p>
+
+                <svg class="w-4 ml-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+                    style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill="" transform="rotate(90)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill="#000000"
+                            d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                            style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill=""></path>
+                    </g>
+                </svg>
+
+            </div>
+            <p class="mt-5 mx-2 hidden faqAnswer">
+                Yes you can, keep in mind that there is a holding fee.
+            </p>
+        </div>
+        <div class="flex flex-col border-b border-gray-400 mt-10 pb-4 2xl:2/5 md:w-3/5 w-11/12 cursor-pointer faqTab">
+
+            <div class="inline-flex justify-between mx-2">
+
+
+                <p class="font-semi-bold">What is your guaranteeon the puppies health?</p>
+
+                <svg class="w-4 ml-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+                    style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill="" transform="rotate(90)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill="#000000"
+                            d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                            style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill=""></path>
+                    </g>
+                </svg>
+
+            </div>
+            <p class="mt-5 mx-2 hidden faqAnswer">
+                We provide a one-year health guarantee for the puppies, as it's highly unusual for them to develop a serious condition after the first year.
+            </p>
+        </div>
+        <div class="flex flex-col border-b border-gray-400 mt-10 pb-4 2xl:2/5 md:w-3/5 w-11/12 cursor-pointer faqTab">
+
+            <div class="inline-flex justify-between mx-2">
+
+
+                <p class="font-semi-bold">How long have you been breeding?</p>
+
+                <svg class="w-4 ml-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+                    style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill="" transform="rotate(90)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill="#000000"
+                            d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                            style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill=""></path>
+                    </g>
+                </svg>
+
+            </div>
+            <p class="mt-5 mx-2 hidden faqAnswer">
+               We have been breeding bulldogs hapily as a family for 1 year.
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- FOOTER -->
     <div class="grid grid-cols-1 bg-primary-black text-primary-white justify-center items-center" id="footer">
 
         <div class="flex flex-col sm:flex-row mx-10 justify-evenly pt-10 pb-3 sm:pb-5 gap-10 md:mx-0 lg:gap-0">
@@ -392,7 +639,7 @@
                     Available Puppies</a>
             </div>
             <!-- Contact -->
-            <div class="grid grid-cols-1 grid-rows-4 sm:grid-rows-5 gap-1 sm:gap-0" >
+            <div class="grid grid-cols-1 grid-rows-4 sm:grid-rows-5 gap-1 sm:gap-0">
 
                 <p class="font-extrabold text-xl">Contact</p>
 
@@ -448,10 +695,10 @@
 
                 <a href="https://www.akc.org/" class="underline underline-offset-1">
                     AKC</a>
-                <a href="#faq"class="underline underline-offset-1">
+                <a href="#faq" class="underline underline-offset-1">
                     FAQ</a>
-               
-                
+
+
             </div>
 
         </div>
@@ -504,7 +751,7 @@
 
 
     </div>
-    
+
 </body>
 
 </html>

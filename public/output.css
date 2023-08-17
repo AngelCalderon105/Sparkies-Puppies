@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 /*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -193,6 +193,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -340,6 +344,14 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
   padding: 0;
 }
 
@@ -592,9 +604,19 @@ video {
   margin: auto;
 }
 
+.mx-1{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .mx-10{
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+}
+
+.mx-11{
+  margin-left: 2.75rem;
+  margin-right: 2.75rem;
 }
 
 .mx-3{
@@ -617,6 +639,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -631,6 +658,10 @@ video {
 
 .mb-7{
   margin-bottom: 1.75rem;
+}
+
+.ml-2{
+  margin-left: 0.5rem;
 }
 
 .mr-1{
@@ -649,8 +680,20 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .mt-6{
   margin-top: 1.5rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.block{
+  display: block;
 }
 
 .inline-block{
@@ -723,6 +766,10 @@ video {
 
 .w-28{
   width: 7rem;
+}
+
+.w-4{
+  width: 1rem;
 }
 
 .w-5{
@@ -904,12 +951,21 @@ video {
   border-width: 2px;
 }
 
+.border-b{
+  border-bottom-width: 1px;
+}
+
 .border-b-2{
   border-bottom-width: 2px;
 }
 
 .border-t-2{
   border-top-width: 2px;
+}
+
+.border-gray-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .bg-black{
@@ -1032,6 +1088,10 @@ video {
 
 .pb-3{
   padding-bottom: 0.75rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
 }
 
 .pt-10{
@@ -1188,8 +1248,8 @@ video {
   transition-delay: 800ms;
 }
 
-.duration-200{
-  transition-duration: 200ms;
+.duration-250{
+  transition-duration: 250ms;
 }
 
 .duration-300{
@@ -1202,10 +1262,6 @@ video {
 
 .duration-800{
   transition-duration: 800ms;
-}
-
-.duration-250{
-  transition-duration: 250ms;
 }
 
 .ease-in-out{
@@ -1336,6 +1392,10 @@ b
     height: 18rem;
   }
 
+  .sm\:w-2\/5{
+    width: 40%;
+  }
+
   .sm\:w-80{
     width: 20rem;
   }
@@ -1440,6 +1500,10 @@ b
     max-height: 100%;
   }
 
+  .md\:w-3\/5{
+    width: 60%;
+  }
+
   .md\:max-w-3xl{
     max-width: 48rem;
   }
@@ -1526,6 +1590,14 @@ b
 
   .lg\:w-m-card-width{
     width: 30rem;
+  }
+
+  .lg\:w-2\/5{
+    width: 40%;
+  }
+
+  .lg\:w-3\/5{
+    width: 60%;
   }
 
   .lg\:max-w-4xl{
