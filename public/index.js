@@ -172,14 +172,40 @@ switchEl.addEventListener('click', () => {
   isActive = !isActive;
 });
     
-var commonSettings = {
+var puppyGallerySettings = {
   focus: 'center',
   type: 'loop',
   autoplay: true,
-  padding: '5rem',
   height: '40rem',
   pauseOnHover: true,
+  lazyLoad: 'nearby',
+  
+  breakpoints: {
+    1024:{
+      height: '35rem'
+    },
+    768: {
+      height: '30rem',
+    },
+    640: {
+      height: '25rem',
+     
+    },
+    500: {
+      height: '15rem',
+    
+    }
+
+  }
+};
+
+var mainGallerySettings = {
+  focus: 'center',
+  type: 'loop',
+  autoplay: true,
+  height: '40rem',
   autoWidth: true,
+  pauseOnHover: true,
   gap: '1rem',
   lazyLoad: 'nearby',
   
@@ -204,19 +230,20 @@ var commonSettings = {
 
 
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
-  new Splide('#mainGallery',commonSettings).mount();
+  new Splide('#mainGallery',mainGallerySettings).mount();
 });
 
 //collects all Galleries
 const gallery = document.querySelectorAll('.puppyGallery');
 const openGalleryBtn = document.querySelectorAll('.openBtn');
 const closeGalleryBtn = document.querySelectorAll('.closeBtn');
-
 const galleryContainer = document.querySelectorAll('.galleryContainer');
 
 for ( let i = 0; i < gallery.length; i++ ) {
-  new Splide(gallery[i],commonSettings).mount();
+  new Splide(gallery[i], puppyGallerySettings).mount();
 }
 
 openGalleryBtn.forEach(function(btn, index) {
