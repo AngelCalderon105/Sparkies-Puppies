@@ -19,6 +19,9 @@ module.exports = {
         'm-card-width':'30rem',
         'lg-card-width':'35rem'
       },
+      letterSpacing: {
+        'header' : '1.1rem',
+      },
       colors: {
         'lighter-white': '#F8F9FA',
         'primary-white': '#E9ECEF',
