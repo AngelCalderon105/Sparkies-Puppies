@@ -19,5 +19,8 @@
   "homepage": "https://github.com/AngelCalderon105/Calderon-Bulldogs#readme",
   "devDependencies": {
     "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4"
   }
 }

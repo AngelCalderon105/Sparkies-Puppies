@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="output.css">
     <script src="index.js" defer></script>
     <script src="firbase.js" type="module"></script>
+    <link rel="stylesheet" href="splide.min.css">
+    <script src="splide.min.js"></script>
+
    
 </head>
 
@@ -139,10 +142,10 @@
 
        </div>
        <!--BACKGROUND COLOR-->
-       <div class="min-h-screen bg-white " id = "ap">
+       <div class=" bg-white " id = "ap">
         <!--CONTENT SECTION--> 
-        <div class="flex flex-col justify-center items-center  ">
-        <h1 class="text-primary-black m-10 text-center text-3xl sm:text-4xl lg:text-6xl xl:text-7xl">Available Puppies</h1> 
+        <div class="flex flex-col justify-center items-center">
+        <h1 class="text-primary-black m-10 text-center text-3xl sm:text-4xl lg:text-6xl ">Available Puppies</h1> 
        
         <div class="relative rounded-full bg-primary-gray overflow-hidden w-52 mb-10">
             <input type="checkbox" id="switch" class="hidden">
@@ -157,185 +160,318 @@
                 Parents
               </span>
             </label>
-          </div>
+        </div>
+        </div>
+        
+        
+        
+        <div class="flex flex-col items-center justify-center sm:mx-10 xl:mx-32 2xl:mx-72  gap-16 md:grid md:grid-cols-2 mb-14 " id="puppies-page">
+            <div class=" group lg:relative max-w-screen-md flex flex-col justify-center m-auto">
+                <!-- Responsive Card with Overlay Text -->
+                <div class="relative  shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96  ">
+                    <!-- Image as Background -->
+                    <img src="img/card.webp" alt="Image" class="absolute w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black opacity-0 lg:group-hover:opacity-50 transition duration-300 "></div>
+                    <!-- Overlay Content -->
+                    <div class="absolute top-0 right-0 m-2 sm:m-3  bg-white rounded-full  lg:group-hover:opacity-30 transition duration-300">
+                        <h1 class="text-black mx-3 lg:mx-6 p-1 lg:text-2xl">Available</h1>
+                    </div>
+                    <div class="absolute bottom-3 right-3 text-white lg:group-hover:opacity-30 transition duration-300">
+                        <h2 class="text-xs sm:text-lg lg:text-2xl text-right"> 
+                            Male <br>
+                            7 weeks <br>
+                            Chocolate Tri <br>
+                        </h2>
+                    </div>
+                </div>
+                <div class= "flex justify-center  mt-6 md:mt-8 lg:mt-0">
+                    <button class="openBtn lg:transition lg:duration-300 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:bg-white lg:text-primary-black 
+                    lg:opacity-0 lg:group-hover:opacity-100 py-1 lg:py-2 px-8 text-white  lg:text-2xl bg-primary-black rounded-full shadow-md shadow-gray-600">
+                    Gallery
+                    </button>
+                </div>
+            </div>
+            <!-- HIDDEN GALLERY -->
+            <div class = "hidden galleryContainer">
+                <div class = "fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 z-50 flex justify-center items-center " >
+                
+                <section class="splide w-full md:w-11/12 lg:w-3/4 puppyGallery" aria-label="Splide Basic HTML Example">
+                    <div class = "flex justify-end ">
+                        <button type = "button" class = "closeBtn  ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-10 ">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                              </svg>
+                        </button>
+                    </div>
+                    <div class="splide__track  ">
+                          <ul class="splide__list ">
+                              <li class="splide__slide"><img src="img/Gallery/gallery7.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                              <li class="splide__slide"><img src="img/Gallery/gallery8.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                              <li class="splide__slide"><img src="img/Gallery/gallery9.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                          </ul>
+                    </div>
+                  </section>
+                </div>
+            </div>
 
-          
-    
-    </div>
-        <div class="flex flex-col items-center justify-center sm:mx-10 xl:mx-28 gap-16 md:grid md:grid-cols-2 mb-14 " id="puppies-page">
-            <div class="max-w-screen-md flex flex-col justify-center m-auto">
-                <!-- Responsive Card with Overlay Text -->
-                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
-                    <!-- Image as Background -->
-                    <img src="img/card.webp" alt="Image" class="absolute w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300"></div>
-                    <!-- Overlay Content -->
-                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
-                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Available</h1>
-                    </div>
-                    <div class="absolute bottom-3 right-3 text-white">
-                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right"> 
-                            Male <br>
-                            7 weeks <br>
-                            Chocolate Tri <br>
-                        </h2>
-                    </div>
-                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
-                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
+
+
+        <div class=" group lg:relative max-w-screen-md flex flex-col justify-center m-auto">
+            <!-- Responsive Card with Overlay Text -->
+            <div class="relative  shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96  ">
+                <!-- Image as Background -->
+                <img src="img/card.webp" alt="Image" class="absolute w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black opacity-0 lg:group-hover:opacity-50 transition duration-300 "></div>
+                <!-- Overlay Content -->
+                <div class="absolute top-0 right-0 m-2 sm:m-3  bg-white rounded-full  lg:group-hover:opacity-30 transition duration-300">
+                    <h1 class="text-black mx-3 lg:mx-6 p-1 lg:text-2xl">Available</h1>
                 </div>
-                <div class= "flex justify-center lg:hidden mt-6 md:mt-8">
-                    <button class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
-                        Gallery
-                    </button>
+                <div class="absolute bottom-3 right-3 text-white lg:group-hover:opacity-30 transition duration-300">
+                    <h2 class="text-xs sm:text-lg lg:text-2xl text-right"> 
+                        Male <br>
+                        7 weeks <br>
+                        Chocolate Tri <br>
+                    </h2>
                 </div>
             </div>
+            <div class= "flex justify-center  mt-6 md:mt-8 lg:mt-0">
+                <button class="openBtn lg:transition lg:duration-300 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:bg-white lg:text-primary-black 
+                lg:opacity-0 lg:group-hover:opacity-100 py-1 lg:py-2 px-8 text-white  lg:text-2xl bg-primary-black rounded-full shadow-md shadow-gray-600">
+                Gallery
+                </button>
+            </div>
+        </div>
+        <!-- HIDDEN GALLERY -->
+        <div class = "hidden galleryContainer">
+            <div class = "fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 z-50 flex justify-center items-center " >
             
-         
-            
-          
-        
-        
-            <div class="max-w-screen-md flex flex-col justify-center m-auto">
-                <!-- Responsive Card with Overlay Text -->
-                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
-                    <!-- Image as Background -->
-                    <img src="img/card.webp" alt="Image" class="absolute w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300"></div>
-                    <!-- Overlay Content -->
-                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
-                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Available</h1>
-                    </div>
-                    <div class="absolute bottom-3 right-3 text-white">
-                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right"> 
-                            Male <br>
-                            7 weeks <br>
-                            Chocolate Tri <br>
-                        </h2>
-                    </div>
-                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
-                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
-                </div>
-                <div class= "flex justify-center lg:hidden mt-6 md:mt-8">
-                    <button class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
-                        Gallery
+            <section class="splide w-full md:w-11/12 lg:w-3/4 puppyGallery" aria-label="Splide Basic HTML Example">
+                <div class = "flex justify-end">
+                    <button type = "button" class = "closeBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-10 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
                     </button>
                 </div>
-            </div>
-            
-            <div class="max-w-screen-md flex flex-col justify-center m-auto">
-                <!-- Responsive Card with Overlay Text -->
-                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
-                    <!-- Image as Background -->
-                    <img src="img/card.webp" alt="Image" class="absolute w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300"></div>
-                    <!-- Overlay Content -->
-                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
-                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Available</h1>
-                    </div>
-                    <div class="absolute bottom-3 right-3 text-white">
-                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right"> 
-                            Male <br>
-                            7 weeks <br>
-                            Chocolate Tri <br>
-                        </h2>
-                    </div>
-                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
-                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
+                <div class="splide__track ">
+                      <ul class="splide__list ">
+                          <li class="splide__slide"><img src="img/Gallery/gallery4.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                          <li class="splide__slide"><img src="img/Gallery/gallery4.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                          <li class="splide__slide"><img src="img/Gallery/gallery4.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                          <li class="splide__slide"><img src="img/Gallery/gallery4.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                          <li class="splide__slide"><img src="img/Gallery/gallery4.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      </ul>
                 </div>
-                <div class= "flex justify-center lg:hidden mt-6 md:mt-8">
-                    <button class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
-                        Gallery
+              </section>
+            </div>
+        </div>
+        <div class=" group lg:relative max-w-screen-md flex flex-col justify-center m-auto">
+            <!-- Responsive Card with Overlay Text -->
+            <div class="relative  shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96  ">
+                <!-- Image as Background -->
+                <img src="img/card.webp" alt="Image" class="absolute w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black opacity-0 lg:group-hover:opacity-50 transition duration-300 "></div>
+                <!-- Overlay Content -->
+                <div class="absolute top-0 right-0 m-2 sm:m-3  bg-white rounded-full  lg:group-hover:opacity-30 transition duration-300">
+                    <h1 class="text-black mx-3 lg:mx-6 p-1 lg:text-2xl">Available</h1>
+                </div>
+                <div class="absolute bottom-3 right-3 text-white lg:group-hover:opacity-30 transition duration-300">
+                    <h2 class="text-xs sm:text-lg lg:text-2xl text-right"> 
+                        Male <br>
+                        7 weeks <br>
+                        Chocolate Tri <br>
+                    </h2>
+                </div>
+            </div>
+            <div class= "flex justify-center  mt-6 md:mt-8 lg:mt-0">
+                <button class="openBtn lg:transition lg:duration-300 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:bg-white lg:text-primary-black 
+                lg:opacity-0 lg:group-hover:opacity-100 py-1 lg:py-2 px-8 text-white  lg:text-2xl bg-primary-black rounded-full shadow-md shadow-gray-600">
+                Gallery
+                </button>
+            </div>
+        </div>
+        <!-- HIDDEN GALLERY -->
+        <div class = "hidden galleryContainer">
+            <div class = "fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 z-50 flex justify-center items-center " >
+            
+            <section class="splide w-full md:w-11/12 lg:w-3/4 puppyGallery" aria-label="Splide Basic HTML Example">
+                <div class = "flex justify-end">
+                    <button type = "button" class = "closeBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-10 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
                     </button>
                 </div>
-            </div>
-        
-            <div class="max-w-screen-md flex flex-col justify-center m-auto">
-                <!-- Responsive Card with Overlay Text -->
-                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
-                    <!-- Image as Background -->
-                    <img src="img/card.webp" alt="Image" class="absolute w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300"></div>
-                    <!-- Overlay Content -->
-                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
-                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Available</h1>
-                    </div>
-                    <div class="absolute bottom-3 right-3 text-white">
-                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right"> 
-                            Male <br>
-                            7 weeks <br>
-                            Chocolate Tri <br>
-                        </h2>
-                    </div>
-                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
-                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
+                <div class="splide__track">
+                      <ul class="splide__list ">
+                          <li class="splide__slide"><img src="img/Gallery/gallery2.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                          <li class="splide__slide"><img src="img/Gallery/gallery2.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                          <li class="splide__slide"><img src="img/Gallery/gallery2.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                          <li class="splide__slide"><img src="img/Gallery/gallery2.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                          <li class="splide__slide"><img src="img/Gallery/gallery2.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      </ul>
                 </div>
-                <div class= "flex justify-center lg:hidden mt-6 md:mt-8">
-                    <button class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
-                        Gallery
+              </section>
+            </div>
+        </div>
+        <div class=" group lg:relative max-w-screen-md flex flex-col justify-center m-auto">
+            <!-- Responsive Card with Overlay Text -->
+            <div class="relative  shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96  ">
+                <!-- Image as Background -->
+                <img src="img/card.webp" alt="Image" class="absolute w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black opacity-0 lg:group-hover:opacity-50 transition duration-300 "></div>
+                <!-- Overlay Content -->
+                <div class="absolute top-0 right-0 m-2 sm:m-3  bg-white rounded-full  lg:group-hover:opacity-30 transition duration-300">
+                    <h1 class="text-black mx-3 lg:mx-6 p-1 lg:text-2xl">Available</h1>
+                </div>
+                <div class="absolute bottom-3 right-3 text-white lg:group-hover:opacity-30 transition duration-300">
+                    <h2 class="text-xs sm:text-lg lg:text-2xl text-right"> 
+                        Male <br>
+                        7 weeks <br>
+                        Chocolate Tri <br>
+                    </h2>
+                </div>
+            </div>
+            <div class= "flex justify-center  mt-6 md:mt-8 lg:mt-0">
+                <button class="openBtn lg:transition lg:duration-300 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:bg-white lg:text-primary-black 
+                lg:opacity-0 lg:group-hover:opacity-100 py-1 lg:py-2 px-8 text-white  lg:text-2xl bg-primary-black rounded-full shadow-md shadow-gray-600">
+                Gallery
+                </button>
+            </div>
+        </div>
+        <!-- HIDDEN GALLERY -->
+        <div class = "hidden galleryContainer">
+            <div class = "fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 z-50 flex justify-center items-center " >
+            
+            <section class="splide w-full md:w-11/12 lg:w-3/4 puppyGallery" aria-label="Splide Basic HTML Example">
+                <div class = "flex justify-end">
+                    <button type = "button" class = "closeBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-10 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
                     </button>
                 </div>
+                <div class="splide__track  ">
+                      <ul class="splide__list ">
+                          <li class="splide__slide"><img src="img/Gallery/gallery3.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                          <li class="splide__slide"><img src="img/Gallery/gallery3.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                          <li class="splide__slide"><img src="img/Gallery/gallery3.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                          <li class="splide__slide"><img src="img/Gallery/gallery3.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                          <li class="splide__slide"><img src="img/Gallery/gallery3.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      </ul>
+                </div>
+              </section>
             </div>
-            
+        </div>
            
-    </div>
+        </div>
     <!--PARENT PAGE BACKGROUND-->
     <div class=" hidden" id="parents-page">
 
-        <div class="flex flex-col items-center justify-center sm:mx-10 xl:mx-28 gap-16 md:grid md:grid-cols-2 mb-14 ">
-            <div class="max-w-screen-md flex flex-col justify-center m-auto">
+        <div class="flex flex-col items-center justify-center sm:mx-10 xl:mx-32 2xl:mx-72  gap-16 md:grid md:grid-cols-2 mb-14 ">
+            <div class=" group lg:relative max-w-screen-md flex flex-col justify-center m-auto">
                 <!-- Responsive Card with Overlay Text -->
-                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
+                <div class="relative  shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96  ">
                     <!-- Image as Background -->
                     <img src="img/KratosParentCard.webp" alt="Image" class="absolute w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300"></div>
+                    <div class="absolute inset-0 bg-black opacity-0 lg:group-hover:opacity-50 transition duration-300 "></div>
                     <!-- Overlay Content -->
-                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
-                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Father</h1>
+                    <div class="absolute top-0 right-0 m-2 sm:m-3  bg-white rounded-full  lg:group-hover:opacity-30 transition duration-300">
+                        <h1 class="text-black mx-3 lg:mx-6 p-1 lg:text-2xl">Father</h1>
                     </div>
-                    <div class="absolute bottom-3 right-3 text-white">
-                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right"> 
+                    <div class="absolute bottom-3 right-3 text-white lg:group-hover:opacity-30 transition duration-300">
+                        <h2 class="text-xs sm:text-lg lg:text-2xl text-right"> 
                             Male <br>
                             1 year old <br>
                             Chocolate Tri <br>
                         </h2>
                     </div>
-                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
-                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
                 </div>
-                <div class= "flex justify-center lg:hidden mt-6 md:mt-8">
-                    <button class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
-                        Gallery
+                <div class= "flex justify-center  mt-6 md:mt-8 lg:mt-0">
+                    <button class="openBtn lg:transition lg:duration-300 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:bg-white lg:text-primary-black 
+                    lg:opacity-0 lg:group-hover:opacity-100 py-1 lg:py-2 px-8 text-white  lg:text-2xl bg-primary-black rounded-full shadow-md shadow-gray-600">
+                    Gallery
                     </button>
                 </div>
             </div>
+            <!-- HIDDEN GALLERY -->
+            <div class = "hidden galleryContainer">
+                <div class = "fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 z-50 flex justify-center items-center " >
+                
+                <section class="splide w-full md:w-11/12 lg:w-3/4 puppyGallery" aria-label="Splide Basic HTML Example">
+                    <div class = "flex justify-end">
+                        <button type = "button" class = "closeBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-10 ">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                              </svg>
+                        </button>
+                    </div>
+                    <div class="splide__track  ">
+                          <ul class="splide__list ">
+                            <li class="splide__slide"><img src="img/KratosCardGallery/photo2.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                            <li class="splide__slide"><img src="img/KratosCardGallery/photo3.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                            <li class="splide__slide"><img src="img/KratosCardGallery/photo4.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                            <li class="splide__slide"><img src="img/KratosCardGallery/photo5.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                            <li class="splide__slide"><img src="img/KratosCardGallery/photo6.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                            <li class="splide__slide"><img src="img/KratosCardGallery/photo7.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                          </ul>
+                    </div>
+                  </section>
+                </div>
+            </div>
+           
             
-            
-            <div class="max-w-screen-md flex flex-col justify-center m-auto">
+            <div class=" group lg:relative max-w-screen-md flex flex-col justify-center m-auto">
                 <!-- Responsive Card with Overlay Text -->
-                <div class="relative group shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96 xl:h-lg-card-height xl:w-lg-card-width ">
+                <div class="relative  shadow-lg shadow-black rounded-xl overflow-hidden w-72 h-64 sm:w-80 sm:h-72 lg:w-m-card-width lg:h-96  ">
                     <!-- Image as Background -->
                     <img src="img/CocoParentCard.webp" alt="Image" class="absolute w-full h-full object-top">
-                    <div class="absolute inset-0 bg-black opacity-0 md:group-hover:opacity-50 transition duration-300"></div>
+                    <div class="absolute inset-0 bg-black opacity-0 lg:group-hover:opacity-50 transition duration-300 "></div>
                     <!-- Overlay Content -->
-                    <div class="absolute top-0 right-0 m-2 bg-white rounded-full sm:m-4 lg:m-6">
-                        <h1 class="text-black mx-3 sm:mx-6 p-1 lg:text-xl xl:text-4xl">Mother</h1>
+                    <div class="absolute top-0 right-0 m-2 sm:m-3  bg-white rounded-full  lg:group-hover:opacity-30 transition duration-300">
+                        <h1 class="text-black mx-3 lg:mx-6 p-1 lg:text-2xl">Mother</h1>
                     </div>
-                    <div class="absolute bottom-3 right-3 text-white">
-                        <h2 class="text-xs sm:text-lg lg:text-2xl xl:text-4xl text-right">     
-                         Female <br>
-                        2 years old<br>
-                        Chocolate Tri <br>
+                    <div class="absolute bottom-3 right-3 text-white lg:group-hover:opacity-30 transition duration-300">
+                        <h2 class="text-xs sm:text-lg lg:text-2xl text-right"> 
+                            Female <br>
+                            2 years old<br>
+                            Chocolate Tri <br>
                         </h2>
                     </div>
-                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100
-                     transition duration-300 bg-white py-4 px-8 text-black rounded-full hidden md:block lg:text-3xl ">Gallery</button>
                 </div>
-                <div class= "flex justify-center lg:hidden mt-6 md:mt-8">
-                    <button class="py-1 px-8 text-white bg-primary-black rounded-2xl shadow-md shadow-gray-600 lg:hidden">
-                        Gallery
+                <div class= "flex justify-center  mt-6 md:mt-8 lg:mt-0">
+                    <button class="openBtn lg:transition lg:duration-300 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:bg-white lg:text-primary-black 
+                    lg:opacity-0 lg:group-hover:opacity-100 py-1 lg:py-2 px-8 text-white  lg:text-2xl bg-primary-black rounded-full shadow-md shadow-gray-600">
+                    Gallery
                     </button>
                 </div>
             </div>
+            <!-- HIDDEN GALLERY -->
+            <div class = "hidden galleryContainer">
+                <div class = "fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 z-50 flex justify-center items-center " >
+                
+                <section class="splide w-full md:w-11/12 lg:w-3/4 puppyGallery" aria-label="Splide Basic HTML Example">
+                    <div class = "flex justify-end">
+                        <button type = "button" class = "closeBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-10 ">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                              </svg>
+                        </button>
+                    </div>
+                    <div class="splide__track  ">
+                          <ul class="splide__list ">
+                            <li class="splide__slide"><img src="img/Gallery/gallery4.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                              <li class="splide__slide"><img src="img/Gallery/gallery4.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                              <li class="splide__slide"><img src="img/Gallery/gallery4.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                              <li class="splide__slide"><img src="img/Gallery/gallery4.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                              <li class="splide__slide"><img src="img/Gallery/gallery4.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                          </ul>
+                    </div>
+                  </section>
+                </div>
+            </div>
+            
+          
            
         </div>
      </div>
@@ -366,8 +502,234 @@
             </div>
         </div>
     </div>
+    <div class = "py-5 md:py-10" id = "gallery">
+        <div class="text-primary-black text-5xl pb-6  text-center">Gallery</div>
+        <div class = " flex justify-center items-center ">
+        <section class="splide w-full md:w-11/12 xl:w-3/4 flex justify-center items-center bg-primary-black" aria-label="Splide Basic HTML Example" id ="mainGallery">
+            <div class="splide__track">
+                  <ul class="splide__list ">
+                      <li class="splide__slide"><img src="img/Gallery/gallery1.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery2.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery3.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery4.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery5.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery6.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery7.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery8.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery9.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery10.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery11.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery12.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery13.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery14.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery15.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery16.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery17.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery18.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery19.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery20.webp" alt="object-contain" class="object-contain w-full h-full"></li>
+                      <li class="splide__slide"><img src="img/Gallery/gallery21.webp" alt="object-contain" class="object-contain w-full h-full"></li>
 
-<!-- FOOTER -->
+                  </ul>
+            </div>
+          </section>
+        </div>
+         
+    </div>
+
+   
+<!-- FAQ -->
+<div class="flex flex-col items-center bg-white text-primary-black pb-10">
+
+    <p class="text-3xl">FAQ</p>
+
+    <div class="flex flex-col border-b border-gray-400 mt-10 pb-4 2xl:2/5 md:w-3/5 w-11/12 cursor-pointer faqTab">
+        <div class="inline-flex justify-between mx-2">
+            <p class="font-semi-bold">When can I take My puppy home?</p>
+            <svg class="w-4 ml-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+                style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill="" transform="rotate(90)">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path fill="#000000"
+                        d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                        style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill=""></path>
+                </g>
+            </svg>
+        </div>
+        <p class="mt-5 mx-2 hidden faqAnswer">
+            You will be able to get your puppy home once they are accustomed to dry food and water which happens at
+            around
+            8 weeks old
+        </p>
+    </div>
+    <div class="flex flex-col border-b border-gray-400 mt-10 pb-4 2xl:2/5 md:w-3/5 w-11/12 cursor-pointer faqTab">
+
+        <div class="inline-flex justify-between mx-2">
+
+
+            <p class="font-semi-bold">Are the Puppies Vaccinated and Dewormed?</p>
+
+            <svg class="w-4 ml-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+                style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill="" transform="rotate(90)">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path fill="#000000"
+                        d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                        style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill=""></path>
+                </g>
+            </svg>
+
+        </div>
+        <p class="mt-5 mx-2 hidden faqAnswer">
+            We adhere to veterinary guidelines, ensuring that your puppy receives three sets of essential
+            vaccinations and two courses of deworming treatments prior to adoption.
+        </p>
+    </div>
+    <div class="flex flex-col border-b border-gray-400 mt-10 pb-4 2xl:2/5 md:w-3/5 w-11/12 cursor-pointer faqTab">
+
+        <div class="inline-flex justify-between mx-2">
+
+
+            <p class="font-semi-bold">Are the Puppies Registered?</p>
+
+            <svg class="w-4 ml-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+                style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill="" transform="rotate(90)">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path fill="#000000"
+                        d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                        style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill=""></path>
+                </g>
+            </svg>
+
+        </div>
+        <p class="mt-5 mx-2 hidden faqAnswer">
+            All of our bulldogs are pure bread and registered by the American kennel Club (AKC)
+        </p>
+    </div>
+    <div class="flex flex-col border-b border-gray-400 mt-10 pb-4 2xl:2/5 md:w-3/5 w-11/12 cursor-pointer faqTab">
+
+        <div class="inline-flex justify-between mx-2">
+
+
+            <p class="font-semi-bold">Can I meet the puppies parents?</p>
+
+            <svg class="w-4 ml-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+                style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill="" transform="rotate(90)">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path fill="#000000"
+                        d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                        style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill=""></path>
+                </g>
+            </svg>
+
+        </div>
+        <p class="mt-5 mx-2 hidden faqAnswer">
+            Certainly you are welcome to come meet the parents just give us a call!
+        </p>
+    </div>
+    <div class="flex flex-col border-b border-gray-400 mt-10 pb-4 2xl:2/5 md:w-3/5 w-11/12 cursor-pointer faqTab">
+
+        <div class="inline-flex justify-between mx-2">
+
+
+            <p class="font-semi-bold">Are the puppies potty trained?</p>
+
+            <svg class="w-4 ml-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+                style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill="" transform="rotate(90)">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path fill="#000000"
+                        d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                        style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill=""></path>
+                </g>
+            </svg>
+
+        </div>
+        <p class="mt-5 mx-2 hidden faqAnswer">
+            Certainly, we initiate potty training with the puppies, but it's important to retrain them to adapt to your specific schedule and surroundings.
+        </p>
+    </div>
+    <div class="flex flex-col border-b border-gray-400 mt-10 pb-4 2xl:2/5 md:w-3/5 w-11/12 cursor-pointer faqTab">
+
+        <div class="inline-flex justify-between mx-2">
+
+
+            <p class="font-semi-bold">Can I reserve my puppy?</p>
+
+            <svg class="w-4 ml-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+                style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill="" transform="rotate(90)">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path fill="#000000"
+                        d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                        style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill=""></path>
+                </g>
+            </svg>
+
+        </div>
+        <p class="mt-5 mx-2 hidden faqAnswer">
+            Yes you can, keep in mind that there is a holding fee.
+        </p>
+    </div>
+    <div class="flex flex-col border-b border-gray-400 mt-10 pb-4 2xl:2/5 md:w-3/5 w-11/12 cursor-pointer faqTab">
+
+        <div class="inline-flex justify-between mx-2">
+
+
+            <p class="font-semi-bold">What is your guaranteeon the puppies health?</p>
+
+            <svg class="w-4 ml-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+                style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill="" transform="rotate(90)">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path fill="#000000"
+                        d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                        style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill=""></path>
+                </g>
+            </svg>
+
+        </div>
+        <p class="mt-5 mx-2 hidden faqAnswer">
+            We provide a one-year health guarantee for the puppies, as it's highly unusual for them to develop a serious condition after the first year.
+        </p>
+    </div>
+    <div class="flex flex-col border-b border-gray-400 mt-10 pb-4 2xl:2/5 md:w-3/5 w-11/12 cursor-pointer faqTab">
+
+        <div class="inline-flex justify-between mx-2">
+
+
+            <p class="font-semi-bold">How long have you been breeding?</p>
+
+            <svg class="w-4 ml-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+                style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill="" transform="rotate(90)">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path fill="#000000"
+                        d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"
+                        style="--darkreader-inline-fill: #000000;" data-darkreader-inline-fill=""></path>
+                </g>
+            </svg>
+
+        </div>
+        <p class="mt-5 mx-2 hidden faqAnswer">
+           We have been breeding bulldogs hapily as a family for 1 year.
+    </div>
+
+
+</div>
+
+
+    <!-- FOOTER -->
     <div class="grid grid-cols-1 bg-primary-black text-primary-white justify-center items-center" id="footer">
 
         <div class="flex flex-col sm:flex-row mx-10 justify-evenly pt-10 pb-3 sm:pb-5 gap-10 md:mx-0 lg:gap-0">
@@ -392,7 +754,7 @@
                     Available Puppies</a>
             </div>
             <!-- Contact -->
-            <div class="grid grid-cols-1 grid-rows-4 sm:grid-rows-5 gap-1 sm:gap-0" >
+            <div class="grid grid-cols-1 grid-rows-4 sm:grid-rows-5 gap-1 sm:gap-0">
 
                 <p class="font-extrabold text-xl">Contact</p>
 
@@ -448,10 +810,10 @@
 
                 <a href="https://www.akc.org/" class="underline underline-offset-1">
                     AKC</a>
-                <a href="#faq"class="underline underline-offset-1">
+                <a href="#faq" class="underline underline-offset-1">
                     FAQ</a>
-               
-                
+
+
             </div>
 
         </div>
@@ -504,7 +866,8 @@
 
 
     </div>
-    
+
 </body>
+
 
 </html>
