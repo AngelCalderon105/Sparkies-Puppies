@@ -2,16 +2,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-b 
+b
 {
   color:black;
 }
+#studPage {
+  background-image: url("img/test3 - Copy.png");
+  height: 100svh;
+}
+
+ @media only screen and (min-width: 768px)  {
+  #studPage {
+    background-image: url("img/test2.png");
+  }
+}
+
+@media only screen and (min-width: 1024px)  {
+  #studPage {
+    background-image: url("img/test1.png");
+  }
+}
+ 
+
+@supports (-webkit-touch-callout: none) {
+/* CSS specific to iOS devices */ 
+#studPage{
+  background-attachment: scroll;
+}
+}
+
 #home {
     background-image: url("img/background.webp");
     height: 100svh;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     #home {
         background-image: url("img/mobile_background.webp");
     }
