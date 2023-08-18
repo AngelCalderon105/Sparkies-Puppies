@@ -1612,6 +1612,11 @@ b
     margin-right: 1rem;
   }
 
+  .md\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .md\:mb-20{
     margin-bottom: 5rem;
   }
