@@ -121,9 +121,6 @@ const formContainer = document.getElementById('form-container');
 const form = document.getElementById('reminderForm');
 const thankYouMessage = document.getElementById('thankYouMessage');
 
-
-
-
 document.getElementById('showFormBtn').addEventListener('click', function() {
     form.classList.remove('hidden');
     form.classList.add('flex','justify-center','items-center');
@@ -143,6 +140,22 @@ document.getElementById('closeFormBtn2').addEventListener('click', function() {
     
     
 });
+
+const statContainer = document.getElementById('statsContainer');
+const statBtn = document.getElementById('statsButton');
+
+
+statBtn.addEventListener('click', () => {
+statContainer.classList.remove('hidden');
+});
+
+document.getElementById('statCloseBtn').addEventListener('click', function() {
+  statContainer.classList.add('hidden');
+  
+});
+
+
+
   
 
 const switchEl = document.getElementById('switch');
