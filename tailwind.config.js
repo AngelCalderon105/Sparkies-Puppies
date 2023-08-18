@@ -12,7 +12,8 @@ module.exports = {
       },
       height:{
         'card-height': '37rem',
-        'lg-card-height':'34rem'
+        'lg-card-height':'34rem',
+        'h-9/10' : '90%',
       },
       width:{
         'card-width': '39rem',
