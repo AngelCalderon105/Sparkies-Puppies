@@ -277,11 +277,15 @@ const images = [
     "img/stud1.webp",
     "img/stud2.webp",
 ];
-// Preload images
-images.forEach(img => {
-  const preloadImg = new Image();
-  preloadImg.src = img;
-});
+var img1 = new Image();
+img1.src = "img/test4.webp";
+
+var img2 = new Image();
+img2.src = "img/stud1.webp";
+
+var img3 = new Image();
+img3.src = "img/stud2.webp";
+
 function changeBackground() {
     // Get the element
     const studPage = document.getElementById("studPage");
