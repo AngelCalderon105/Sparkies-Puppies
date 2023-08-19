@@ -1359,8 +1359,12 @@ b
   color:black;
 }
 
+body:not(.loaded) #studPage {
+  display:none;
+}
+
 #studPage {
-  background: black url("img/test4.webp");
+  background: url("img/test4.webp");
   height: 100vh;
   transition: background-image .7s ease-in-out;
 }
