@@ -271,23 +271,23 @@ closeGalleryBtn.forEach(function(btn, index) {
 });
 
 
-let imageIndex = 0;
-const images = [
-    "img/test4.webp",
-    "img/stud1.webp",
-    "img/stud2.webp",
-];
+// let imageIndex = 0;
+// const images = [
+//     "img/test4.webp",
+//     "img/stud1.webp",
+//     "img/stud2.webp",
+// ];
 
-function changeBackground() {
-    // Get the element
-    const studPage = document.getElementById("studPage");
+// function changeBackground() {
+//     // Get the element
+//     const studPage = document.getElementById("studPage");
     
-    // Update the background image
-    studPage.style.backgroundImage = `url("${images[imageIndex]}")`;
+//     // Update the background image
+//     studPage.style.backgroundImage = `url("${images[imageIndex]}")`;
     
-    // Increment index for next time
-    imageIndex = (imageIndex + 1) % images.length;
-}
+//     // Increment index for next time
+//     imageIndex = (imageIndex + 1) % images.length;
+// }
 
-// Change the background every 5-6 seconds (let's say 5.5 seconds for this example)
-setInterval(changeBackground, 5000);
+// // Change the background every 5-6 seconds (let's say 5.5 seconds for this example)
+// setInterval(changeBackground, 5000);
