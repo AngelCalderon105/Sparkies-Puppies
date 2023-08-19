@@ -1363,25 +1363,6 @@ b
   background-image:  url("img/test4.webp");
   height: 100vh;
   transition: background-image .7s ease-in-out;
-  animation: studAnimation 10s infinite;
-}
-
-@keyframes studAnimation {
-  0% {
-    background-image: url('img/test4.webp');
-  }
-
-  33% {
-    background-image: url('img/stud1.webp');
-  }
-
-  66% {
-    background-image: url('img/stud2.webp');
-  }
-
-  100% {
-    background-image: url('img/test4.webp');
-  }
 }
 
 @media only screen and (min-width: 1024px)  {
