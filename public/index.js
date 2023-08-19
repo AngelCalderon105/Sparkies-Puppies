@@ -186,23 +186,6 @@ switchEl.addEventListener('click', () => {
   }
   isActive = !isActive;
 });
-//faq
-
-const tab = document.querySelectorAll('.faqTab');
-const answer = document.querySelectorAll('.faqAnswer');
-
-
-tab.forEach(function(tab, index) {
-tab.addEventListener('click' , () => {
-  if(answer[index].classList.contains('hidden')) {
-    answer[index].classList.remove('hidden');
-  }
-  else {
-    answer[index].classList.add('hidden');
-
-  }
-})
-});
 
 
 var puppyGallerySettings = {
@@ -300,3 +283,23 @@ function changeBackground() {
 }
 
 // Change the background every 5-6 seconds (let's say 5.5 seconds for this example)
+
+const tabs = document.querySelectorAll('.faqTab');
+
+tabs.forEach((tab, index) => {
+    const answer = tab.querySelector('.faqAnswer');
+    const upArrow = tab.querySelector('.arrow-up');
+    const downArrow = tab.querySelector('.arrow-down');
+
+    tab.addEventListener('click', () => {
+        if (answer.classList.contains('hidden')) {
+            answer.classList.remove('hidden');
+            upArrow.classList.remove('hidden');
+            downArrow.classList.add('hidden');
+        } else {
+            answer.classList.add('hidden');
+            upArrow.classList.add('hidden');
+            downArrow.classList.remove('hidden');
+        }
+    });
+});
