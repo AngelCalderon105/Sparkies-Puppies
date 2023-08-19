@@ -276,8 +276,6 @@ const images = [
     "img/test4.png",
     "img/stud1.png",
     "img/stud2.png",
-
-
 ];
 
 function changeBackground() {
