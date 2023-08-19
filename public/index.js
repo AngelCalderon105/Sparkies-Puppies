@@ -271,3 +271,25 @@ closeGalleryBtn.forEach(function(btn, index) {
 });
 
 
+let imageIndex = 0;
+const images = [
+    "img/test4.png",
+    "img/stud1.png",
+    "img/stud2.png",
+
+
+];
+
+function changeBackground() {
+    // Get the element
+    const studPage = document.getElementById("studPage");
+    
+    // Update the background image
+    studPage.style.backgroundImage = `url("${images[imageIndex]}")`;
+    
+    // Increment index for next time
+    imageIndex = (imageIndex + 1) % images.length;
+}
+
+// Change the background every 5-6 seconds (let's say 5.5 seconds for this example)
+setInterval(changeBackground, 5000);

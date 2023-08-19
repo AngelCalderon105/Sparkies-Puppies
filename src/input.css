@@ -7,19 +7,19 @@ b
   color:black;
 }
 #studPage {
-  background-image: url("img/test3 - Copy.png");
-  height: 100svh;
+  background-image: url("img/test4.png");
+  height: 100vh;
+  transition: background-image .7s ease-in-out; 
 }
 
- @media only screen and (min-width: 768px)  {
-  #studPage {
-    background-image: url("img/test2.png");
-  }
-}
+
+
 
 @media only screen and (min-width: 1024px)  {
   #studPage {
-    background-image: url("img/test1.png");
+    
+    background-size: 125%;
+  
   }
 }
  
