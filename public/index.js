@@ -5,6 +5,8 @@ const logo = document.querySelector('#logo');
 const mobileTitle = document.querySelector('#mobile-title');
 const offsetHeight = document.querySelector('header').offsetHeight;
 
+setInterval(changeBackground, 5000);
+
 
 window.addEventListener('scroll', function() {
 
@@ -298,4 +300,3 @@ function changeBackground() {
 }
 
 // Change the background every 5-6 seconds (let's say 5.5 seconds for this example)
-setInterval(changeBackground, 5000);
