@@ -12,7 +12,7 @@ body:not(.loaded) #studPage {
 }
 
 #studPage {
-  background: url("img/test4.webp");
+  background-image: url("img/test4.webp");
   height: 100vh;
   transition: background-image .7s ease-in-out; 
 }
