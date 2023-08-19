@@ -277,7 +277,11 @@ const images = [
     "img/stud1.webp",
     "img/stud2.webp",
 ];
-
+// Preload images
+images.forEach(img => {
+  const preloadImg = new Image();
+  preloadImg.src = img;
+});
 function changeBackground() {
     // Get the element
     const studPage = document.getElementById("studPage");
