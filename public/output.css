@@ -1360,7 +1360,7 @@ b
 }
 
 #studPage {
-  background-image: url("img/test4.webp");
+  background: black url("img/test4.webp");
   height: 100vh;
   transition: background-image .7s ease-in-out;
 }
