@@ -273,9 +273,9 @@ closeGalleryBtn.forEach(function(btn, index) {
 
 let imageIndex = 0;
 const images = [
-    "img/test4.png",
-    "img/stud1.png",
-    "img/stud2.png",
+    "img/test4.webp",
+    "img/stud1.webp",
+    "img/stud2.webp",
 ];
 
 function changeBackground() {
