@@ -740,7 +740,7 @@ video {
 }
 
 .h-h-9\/10{
-  height: 90%;
+  height: 88%;
 }
 
 .max-h-0{
@@ -1359,7 +1359,7 @@ b
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
-  transition: all 1s;
+  transition: all 1.5s;
 }
 
 .puppyCardShow {
