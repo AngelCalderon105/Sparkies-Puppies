@@ -305,9 +305,7 @@ tabs.forEach((tab, index) => {
 });
 
 //Animations
-const options = {
-  threshold: 0.8  // 80% visibility
-};
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry)
@@ -317,8 +315,7 @@ const observer = new IntersectionObserver((entries) => {
     else {
       entry.target.classList.remove('puppyCardShow')
     }
-  },
-  )
+  })
 });
 
 
