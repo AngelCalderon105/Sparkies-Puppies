@@ -312,9 +312,7 @@ const observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('puppyCardShow');
     }
-    else {
-      entry.target.classList.remove('puppyCardShow')
-    }
+
   })
 });
 
