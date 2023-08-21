@@ -282,8 +282,8 @@ function changeBackground() {
     imageIndex = (imageIndex + 1) % images.length;
 }
 
-// Change the background every 5-6 seconds (let's say 5.5 seconds for this example)
 
+//FAQ tab and Arrows 
 const tabs = document.querySelectorAll('.faqTab');
 
 tabs.forEach((tab, index) => {
@@ -303,3 +303,20 @@ tabs.forEach((tab, index) => {
         }
     });
 });
+
+//Animations
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('puppyCardShow');
+    }
+    else {
+      entry.target.classList.remove('puppyCardShow')
+    }
+  });
+});
+
+const hiddenPupppyCards = document.querySelectorAll('.puppyCardHide');
+hiddenPupppyCards.forEach((el) => observer.observe(el));

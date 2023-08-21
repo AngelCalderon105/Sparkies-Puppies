@@ -1142,10 +1142,6 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.pb-20{
-  padding-bottom: 5rem;
-}
-
 .pb-3{
   padding-bottom: 0.75rem;
 }
@@ -1357,6 +1353,19 @@ video {
 b
 {
   color:black;
+}
+
+.puppyCardHide {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.puppyCardShow {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 #studPage {
