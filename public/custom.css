@@ -42,9 +42,7 @@ transform: translateX(0);
     #home {
         background-image: url("img/background.webp");
     }
-   
-} 
-@supports (-webkit-touch-callout: none) {
+    @supports (-webkit-touch-callout: none) {
   /* CSS specific to iOS devices */ 
   #home{
     background-attachment: scroll;
@@ -57,6 +55,8 @@ transform: translateX(0);
     background-attachment: fixed;
   }
 }
+} 
+
 
 
 .transition-h {
