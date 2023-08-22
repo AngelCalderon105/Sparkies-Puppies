@@ -279,7 +279,7 @@ function changeBackground() {
     const studPage = document.getElementById("studPage");
     
     // Update the background image
-    studPage.style.backgroundImage = `url("${images[imageIndex]}")`;
+    studPage.style.backgroundImage = `url("${images[imageIndex]}");`;
     
     // Increment index for next time
     imageIndex = (imageIndex + 1) % images.length;
