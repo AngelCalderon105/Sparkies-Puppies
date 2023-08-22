@@ -258,21 +258,21 @@ closeGalleryBtn.forEach(function(btn, index) {
 
 let imageIndex = 0;
 const images = [
-    "/public/img/test4.webp",
-    "/public/img/stud1.webp",
-    "/public/img/stud2.webp",
+    "public/img/test4.webp",
+    "public/img/stud1.webp",
+    "public/img/stud2.webp",
 ];
 var img1 = new Image();
-img1.src = "/public/img/test4.webp";
+img1.src = "public/img/test4.webp";
 
 var img2 = new Image();
-img2.src = "/public/img/stud1.webp";
+img2.src = "public/img/stud1.webp";
 
 var img3 = new Image();
-img3.src = "/public/img/stud2.webp";
+img3.src = "public/img/stud2.webp";
 
 var img4 = new Image();
-img4.src = "/public/img/mobile_background.webp";
+img4.src = "public/img/mobile_background.webp";
 
 function changeBackground() {
     // Get the element
