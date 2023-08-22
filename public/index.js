@@ -271,6 +271,7 @@ img2.src = "img/stud1.webp";
 var img3 = new Image();
 img3.src = "img/stud2.webp";
 
+
 function changeBackground() {
     // Get the element
     const studPage = document.getElementById("studPage");
