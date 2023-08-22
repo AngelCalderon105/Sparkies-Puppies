@@ -272,7 +272,7 @@ var img3 = new Image();
 img3.src = "/public/img/stud2.webp";
 
 var img4 = new Image();
-img4.src = "//public/img/mobile_background.webp";
+img4.src = "/public/img/mobile_background.webp";
 
 function changeBackground() {
     // Get the element
