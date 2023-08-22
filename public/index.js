@@ -258,28 +258,28 @@ closeGalleryBtn.forEach(function(btn, index) {
 
 let imageIndex = 0;
 const images = [
-    "/public/img/test4.webp",
-    "/public/img/stud1.webp",
-    "/public/img/stud2.webp",
+    "img/test4.webp",
+    "img/stud1.webp",
+    "img/stud2.webp",
 ];
-// var img1 = new Image();
-// img1.src = "/public/img/test4.webp";
+var img1 = new Image();
+img1.src = "img/test4.webp";
 
-// var img2 = new Image();
-// img2.src = "/public/img/stud1.webp";
+var img2 = new Image();
+img2.src = "img/stud1.webp";
 
-// var img3 = new Image();
-// img3.src = "/public/img/stud2.webp";
+var img3 = new Image();
+img3.src = "img/stud2.webp";
 
-// var img4 = new Image();
-// img4.src = "/public/img/mobile_background.webp";
+var img4 = new Image();
+img4.src = "img/mobile_background.webp";
 
 function changeBackground() {
     // Get the element
     const studPage = document.getElementById("studPage");
     
     // Update the background image
-    studPage.style.backgroundImage = `url("${images[imageIndex]}");`;
+    studPage.style.backgroundImage = `url("${images[imageIndex]}")`;
     
     // Increment index for next time
     imageIndex = (imageIndex + 1) % images.length;
