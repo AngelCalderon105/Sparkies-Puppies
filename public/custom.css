@@ -43,7 +43,7 @@ transform: translateX(0);
 }
 }
 
-#home {
+/* #home {
     background-image: url("img/mobile_background.webp");
 }
 
@@ -51,7 +51,7 @@ transform: translateX(0);
     #home {
         background-image: url("img/background.webp");
     }
-} 
+} */
 
 @supports (-webkit-touch-callout: none) {
   /* CSS specific to iOS devices */ 
@@ -86,7 +86,7 @@ transform: translateX(0);
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url("img/paws5.webp"); 
+  /* background-image: url("img/paws5.webp"); */
   background-size: cover ;
   background-position: bottom;
   opacity: .1;
