@@ -5,7 +5,7 @@ const logo = document.querySelector('#logo');
 const mobileTitle = document.querySelector('#mobile-title');
 const offsetHeight = document.querySelector('header').offsetHeight;
 
-setInterval(changeBackground, 5000);
+
 
 
 window.addEventListener('scroll', function() {
@@ -274,6 +274,7 @@ img3.src = "img/stud2.webp";
 var img4 = new Image();
 img4.src = "img/mobile_background.webp";
 
+
 function changeBackground() {
     // Get the element
     const studPage = document.getElementById("studPage");
@@ -285,7 +286,7 @@ function changeBackground() {
     imageIndex = (imageIndex + 1) % images.length;
 }
 
-
+setInterval(changeBackground, 5000);
 //FAQ tab and Arrows 
 const tabs = document.querySelectorAll('.faqTab');
 
