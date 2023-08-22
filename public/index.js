@@ -275,16 +275,16 @@ var img4 = new Image();
 img4.src = "/public/img/mobile_background.webp";
 
 
-function changeBackground() {
-    // Get the element
-    const studPage = document.getElementById("studPage");
+// function changeBackground() {
+//     // Get the element
+//     const studPage = document.getElementById("studPage");
     
-    // Update the background image
-    studPage.style.backgroundImage = `url("${images[imageIndex]}")`;
+//     // Update the background image
+//     studPage.style.backgroundImage = `url("${images[imageIndex]}")`;
     
-    // Increment index for next time
-    imageIndex = (imageIndex + 1) % images.length;
-}
+//     // Increment index for next time
+//     imageIndex = (imageIndex + 1) % images.length;
+// }
 
 setInterval(changeBackground, 5000);
 //FAQ tab and Arrows 
@@ -310,18 +310,18 @@ tabs.forEach((tab, index) => {
 
 //Animations
 
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     console.log(entry)
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add('puppyCardShow');
-//     }
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('puppyCardShow');
+    }
 
-//   })
-// });
-
-
+  })
+});
 
 
-// const hiddenPupppyCards = document.querySelectorAll('.puppyCardHide');
-// hiddenPupppyCards.forEach((el) => observer.observe(el));
+
+
+const hiddenPupppyCards = document.querySelectorAll('.puppyCardHide');
+hiddenPupppyCards.forEach((el) => observer.observe(el));
