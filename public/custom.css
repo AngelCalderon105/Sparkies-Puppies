@@ -18,11 +18,11 @@ filter: blur(0);
 transform: translateX(0);
 }
 
-/* #studPage {
+ #studPage {
   background-image: url("img/test4.webp");
   height: 100vh;
   transition: background-image .7s ease-in-out; 
-} */
+} 
 
 
 
@@ -87,7 +87,7 @@ transform: translateX(0);
   right: 0px;
   bottom: 0px;
   left: 0px;
-  /* background-image: url("img/paws5.webp"); */
+  background-image: url("img/paws5.webp"); 
   background-size: cover ;
   background-position: bottom;
   opacity: .1;
