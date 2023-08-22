@@ -44,12 +44,12 @@ transform: translateX(0);
 }
 
 #home {
-    background-image: url("public/img/mobile_background.webp");
+    background-image: url("/public/img/mobile_background.webp");
 }
 
 @media only screen and (min-width: 767px) {
     #home {
-        background-image: url("public/img/background.webp");
+        background-image: url("/public/img/background.webp");
     }
 }
 
@@ -86,7 +86,7 @@ transform: translateX(0);
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url("public/img/paws5.webp");
+  background-image: url("/public/img/paws5.webp");
   background-size: cover ;
   background-position: bottom;
   opacity: .1;
