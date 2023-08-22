@@ -272,6 +272,7 @@ var img3 = new Image();
 img3.src = "img/stud2.webp";
 
 
+
 function changeBackground() {
     // Get the element
     const studPage = document.getElementById("studPage");
@@ -307,18 +308,18 @@ tabs.forEach((tab, index) => {
 
 //Animations
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry)
-    if (entry.isIntersecting) {
-      entry.target.classList.add('puppyCardShow');
-    }
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     console.log(entry)
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add('puppyCardShow');
+//     }
 
-  })
-});
-
-
+//   })
+// });
 
 
-const hiddenPupppyCards = document.querySelectorAll('.puppyCardHide');
-hiddenPupppyCards.forEach((el) => observer.observe(el));
+
+
+// const hiddenPupppyCards = document.querySelectorAll('.puppyCardHide');
+// hiddenPupppyCards.forEach((el) => observer.observe(el));
