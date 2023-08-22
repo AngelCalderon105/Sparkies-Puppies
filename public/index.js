@@ -258,9 +258,9 @@ closeGalleryBtn.forEach(function(btn, index) {
 
 let imageIndex = 0;
 const images = [
-    "img/test4.webp",
-    "img/stud1.webp",
-    "img/stud2.webp",
+    "/public/img/test4.webp",
+    "/public/img/stud1.webp",
+    "/public/img/stud2.webp",
 ];
 var img1 = new Image();
 img1.src = "img/test4.webp";
