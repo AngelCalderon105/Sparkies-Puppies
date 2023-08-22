@@ -271,7 +271,8 @@ img2.src = "img/stud1.webp";
 var img3 = new Image();
 img3.src = "img/stud2.webp";
 
-
+var img4 = new Image();
+img4.src = "img/mobile_background.webp";
 
 function changeBackground() {
     // Get the element
