@@ -308,18 +308,18 @@ tabs.forEach((tab, index) => {
 
 //Animations
 
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     console.log(entry)
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add('puppyCardShow');
-//     }
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('puppyCardShow');
+    }
 
-//   })
-// });
-
-
+  })
+});
 
 
-// const hiddenPupppyCards = document.querySelectorAll('.puppyCardHide');
-// hiddenPupppyCards.forEach((el) => observer.observe(el));
+
+
+const hiddenPupppyCards = document.querySelectorAll('.puppyCardHide');
+hiddenPupppyCards.forEach((el) => observer.observe(el));
