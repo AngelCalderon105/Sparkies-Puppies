@@ -286,7 +286,7 @@ img4.src = "/public/img/mobile_background.webp";
 //     imageIndex = (imageIndex + 1) % images.length;
 // }
 
-setInterval(changeBackground, 5000);
+// setInterval(changeBackground, 5000);
 //FAQ tab and Arrows 
 const tabs = document.querySelectorAll('.faqTab');
 
