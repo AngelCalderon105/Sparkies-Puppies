@@ -332,7 +332,7 @@ studCardBtn.addEventListener('click', () => {
 
 window.addEventListener('resize', function(){
   const width = window.innerWidth;
-  const contactBtn = document.querySelectorAll(".contactUs");
+  let contactBtn = document.querySelectorAll(".contactUs");
   contactBtn.forEach((elem) => {
     if (width <= 640) {  
       elem.setAttribute('href', 'tel:714-232-9787');
