@@ -1450,6 +1450,14 @@ video {
     margin-right: 2.5rem;
   }
 
+  .sm\:block{
+    display: block;
+  }
+
+  .sm\:inline{
+    display: inline;
+  }
+
   .sm\:hidden{
     display: none;
   }

@@ -330,17 +330,3 @@ studCardBtn.addEventListener('click', () => {
 
 });
 
-window.addEventListener('resize', function(){
-  const width = window.innerWidth;
-  let contactBtn = document.querySelectorAll(".contactUs");
-  contactBtn.forEach((elem) => {
-    if (width <= 640) {  
-      elem.setAttribute('href', 'tel:714-232-9787');
-      elem.setAttribute('target', '_blank');
-    } else {
-      elem.setAttribute('href', '#footer');
-      elem.setAttribute('target', '');
-    }
-  });
-});
-
