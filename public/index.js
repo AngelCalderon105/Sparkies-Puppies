@@ -320,8 +320,24 @@ const observer = new IntersectionObserver((entries) => {
   })
 });
 
-
-
-
 const hiddenPupppyCards = document.querySelectorAll('.puppyCardHide');
 hiddenPupppyCards.forEach((el) => observer.observe(el));
+
+const studCardBtn = document.querySelector('#studContactBtn');
+
+studCardBtn.addEventListener('click', () => {
+  statContainer.classList.add('hidden');
+
+});
+
+window.addEventListener('resize', function(){
+  const width = window.innerWidth;
+  const contactBtn = document.querySelectorAll(".contactUs");
+  contactBtn.forEach((elem) => {
+    if (width <= 640) {  
+      elem.setAttribute('href', 'tel:714-232-9787');
+    } else {
+      elem.setAttribute('href', '#footer');
+    }
+  });
+});
