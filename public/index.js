@@ -335,13 +335,12 @@ window.addEventListener('resize', function(){
   let contactBtn = document.querySelectorAll(".contactUs");
   contactBtn.forEach((elem) => {
     if (width <= 640) {  
-      elem.setAttribute('href', 'tel:714-232-9787');_blank
+      elem.setAttribute('href', 'tel:714-232-9787');
       elem.setAttribute('target', '_blank');
-
     } else {
       elem.setAttribute('href', '#footer');
       elem.setAttribute('target', '');
-
     }
   });
 });
+
