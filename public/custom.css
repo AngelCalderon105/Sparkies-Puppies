@@ -19,7 +19,7 @@ transform: translateX(0);
 }
 
  #studPage {
-  background-image: url("img/test4.webp");
+  background-image: url("img/stud1.webp");
   height: 100vh;
   transition: background-image .7s ease-in-out; 
 } 

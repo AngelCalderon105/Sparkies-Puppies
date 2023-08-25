@@ -751,18 +751,6 @@ video {
   height: 88%;
 }
 
-.h-11{
-  height: 2.75rem;
-}
-
-.h-9{
-  height: 2.25rem;
-}
-
-.h-8{
-  height: 2rem;
-}
-
 .max-h-0{
   max-height: 0px;
 }
@@ -789,10 +777,6 @@ video {
 
 .w-12{
   width: 3rem;
-}
-
-.w-14{
-  width: 3.5rem;
 }
 
 .w-20{
@@ -850,14 +834,6 @@ video {
 .w-max{
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-10{
-  width: 2.5rem;
-}
-
-.w-11{
-  width: 2.75rem;
 }
 
 .max-w-screen-md{

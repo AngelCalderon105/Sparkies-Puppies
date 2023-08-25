@@ -258,21 +258,26 @@ closeGalleryBtn.forEach(function(btn, index) {
 
 let imageIndex = 0;
 const images = [
-    "/public/img/test4.webp",
+  "/public/img/stud6.webp",
+  "/public/img/stud7.webp",
+    "/public/img/stud5.webp",
     "/public/img/stud1.webp",
-    "/public/img/stud2.webp",
 ];
 var img1 = new Image();
-img1.src = "/public/img/test4.webp";
+img1.src = "/public/img/stud1.webp";
 
 var img2 = new Image();
-img2.src = "/public/img/stud1.webp";
+img2.src = "/public/img/stud5.webp";
 
 var img3 = new Image();
-img3.src = "/public/img/stud2.webp";
+img3.src = "/public/img/stud6.webp";
 
 var img4 = new Image();
 img4.src = "/public/img/mobile_background.webp";
+
+var img5 = new Image();
+img5.src = "/public/img/stud7.webp";
+
 
 
 function changeBackground() {
