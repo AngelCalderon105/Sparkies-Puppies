@@ -18,7 +18,7 @@ filter: blur(0);
 transform: translateX(0);
 }
 
- #studPage {
+#studPage {
   background-image: url("img/stud1.webp"); 
   transition: background-image .7s ease-in-out; 
 } 

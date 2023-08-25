@@ -747,14 +747,6 @@ video {
   height: 100%;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
-.h-h-9\/10{
-  height: 90%;
-}
-
 .max-h-0{
   max-height: 0px;
 }
@@ -1432,10 +1424,6 @@ video {
     height: 18rem;
   }
 
-  .sm\:h-auto{
-    height: auto;
-  }
-
   .sm\:w-10\/12{
     width: 83.333333%;
   }
@@ -1689,16 +1677,16 @@ video {
     margin-top: 0px;
   }
 
+  .lg\:mb-20{
+    margin-bottom: 5rem;
+  }
+
   .lg\:block{
     display: block;
   }
 
   .lg\:h-96{
     height: 24rem;
-  }
-
-  .lg\:h-screen{
-    height: 100vh;
   }
 
   .lg\:min-h-full{
