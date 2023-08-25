@@ -54,13 +54,14 @@ transform: translateX(0);
     background-attachment: scroll;
   }
 }
-}
+
 
 @supports not (-webkit-touch-callout: none) {
   /* CSS for other than iOS devices */ 
   #home {
     background-attachment: fixed;
   }
+}
 }
 
 
