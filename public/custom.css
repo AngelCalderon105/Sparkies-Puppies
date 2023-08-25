@@ -37,8 +37,14 @@ transform: translateX(0);
 #home {
     background-image: url("img/mobile_background.webp");
 }
+@media only screen and (min-width:768px) {
+  #home {
+    background-image: url("img/Gallery/gallery4.webp");
+}
+}
 
-@media only screen and (min-width: 767px) {
+
+@media only screen and (min-width: 1280px) {
     #home {
         background-image: url("img/background.webp");
     }
@@ -55,7 +61,8 @@ transform: translateX(0);
     background-attachment: fixed;
   }
 }
-} 
+
+
 
 
 
