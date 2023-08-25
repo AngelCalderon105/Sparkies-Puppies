@@ -15,6 +15,9 @@ module.exports = {
         'lg-card-height':'34rem',
         'h-9/10' : '90%',
       },
+      minHeight: {
+        'min-h-90' : '85vh',
+      },
       width:{
         'card-width': '39rem',
         'm-card-width':'30rem',

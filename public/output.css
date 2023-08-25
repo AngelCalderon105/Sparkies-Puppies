@@ -747,6 +747,10 @@ video {
   height: 100%;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
 .h-h-9\/10{
   height: 90%;
 }
@@ -761,6 +765,10 @@ video {
 
 .max-h-screen{
   max-height: 100vh;
+}
+
+.min-h-min-h-90{
+  min-height: 85vh;
 }
 
 .min-h-screen{
@@ -1424,6 +1432,10 @@ video {
     height: 18rem;
   }
 
+  .sm\:h-auto{
+    height: auto;
+  }
+
   .sm\:w-10\/12{
     width: 83.333333%;
   }
@@ -1683,6 +1695,10 @@ video {
 
   .lg\:h-96{
     height: 24rem;
+  }
+
+  .lg\:h-screen{
+    height: 100vh;
   }
 
   .lg\:min-h-full{
