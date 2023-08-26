@@ -1190,6 +1190,11 @@ video {
   padding-bottom: 5rem;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1298,6 +1303,10 @@ video {
 
 .font-semibold{
   font-weight: 600;
+}
+
+.font-bold{
+  font-weight: 700;
 }
 
 .leading-loose{
@@ -1422,6 +1431,10 @@ video {
 .placeholder\:text-xl::placeholder{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.hover\:underline:hover{
+  text-decoration-line: underline;
 }
 
 .focus\:outline-none:focus{
