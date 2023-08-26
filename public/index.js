@@ -194,6 +194,7 @@ var puppyGallerySettings = {
   autoplay: true,
   pauseOnHover: true,
   lazyLoad: 'nearby',
+  
 };
 
 var mainGallerySettings = {
