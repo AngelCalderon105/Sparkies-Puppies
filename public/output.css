@@ -1185,6 +1185,11 @@ video {
   padding-bottom: 0px;
 }
 
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1211,6 +1216,14 @@ video {
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pb-20{
+  padding-bottom: 5rem;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
 }
 
 .text-left{
@@ -1887,6 +1900,10 @@ video {
 
   .xl\:flex-row{
     flex-direction: row;
+  }
+
+  .xl\:flex-row-reverse{
+    flex-direction: row-reverse;
   }
 
   .xl\:items-center{
