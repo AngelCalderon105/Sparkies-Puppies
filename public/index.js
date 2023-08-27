@@ -93,22 +93,29 @@ showClock();
 setInterval("showClock()",1000);
 
 function showClock() {
-   let thisDay = new Date(); // returns current date   
-   let septDate = nextSept13(thisDay);
-   septDate.setHours(21);
-    
-   var countDown = septDate - thisDay;
+  let thisDay = new Date(); // returns current date   
+  let septDate = nextSept13(thisDay);
+  septDate.setHours(21);
+  
+  // Convert to Pacific Time
+  let pacificTimeOffset = 420; // Pacific Time is UTC-7
+  let localOffset = thisDay.getTimezoneOffset();
+  let offset = pacificTimeOffset - localOffset;
+  let pacificDate = new Date(thisDay.getTime() + offset * 60 * 1000);
+  
+  var countDown = septDate - pacificDate;
+  
+  let dayCountDown = Math.floor(countDown / (1000 * 60 * 60 * 24)); 
+  let hourCountDown = Math.floor((countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minCountDown = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
+  let secCountDown = Math.floor((countDown % (1000 * 60)) / 1000);
    
-   let dayCountDown = Math.floor(countDown / (1000 * 60 * 60 * 24)); 
-   let hourCountDown = Math.floor((countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-   let minCountDown = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
-   let secCountDown = Math.floor((countDown % (1000 * 60)) / 1000);
-    
-   document.getElementById("daysLeft").textContent = dayCountDown - 1;
-   document.getElementById("hoursLeft").textContent = hourCountDown + 2;
-   document.getElementById("minLeft").textContent = minCountDown;
-   document.getElementById("secLeft").textContent = secCountDown;
+  document.getElementById("daysLeft").textContent = dayCountDown ;
+  document.getElementById("hoursLeft").textContent = hourCountDown + 3;
+  document.getElementById("minLeft").textContent = minCountDown;
+  document.getElementById("secLeft").textContent = secCountDown;
 }
+
 
 function nextSept13(currentDate) {
    var cYear = currentDate.getFullYear();
@@ -259,25 +266,25 @@ closeGalleryBtn.forEach(function(btn, index) {
 
 let imageIndex = 0;
 const images = [
-  "/public/img/stud6.webp",
-  "/public/img/stud7.webp",
-    "/public/img/stud5.webp",
-    "/public/img/stud1.webp",
+  "img/stud6.webp",
+  "img/stud7.webp",
+  "img/stud1.webp",
+  "img/test4.webp",
 ];
 var img1 = new Image();
-img1.src = "/public/img/stud1.webp";
+img1.src = "img/stud1.webp";
 
 var img2 = new Image();
-img2.src = "/public/img/stud5.webp";
+img2.src = "img/test4.webp";
 
 var img3 = new Image();
-img3.src = "/public/img/stud6.webp";
+img3.src = "img/stud6.webp";
 
 var img4 = new Image();
-img4.src = "/public/img/mobile_background.webp";
+img4.src = "img/mobile_background.webp";
 
 var img5 = new Image();
-img5.src = "/public/img/stud7.webp";
+img5.src = "/img/stud7.webp";
 
 
 

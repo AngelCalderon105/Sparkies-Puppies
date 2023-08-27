@@ -646,6 +646,16 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -1153,6 +1163,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pb-12{
   padding-bottom: 3rem;
 }
@@ -1414,16 +1429,12 @@ video {
     height: 18rem;
   }
 
-  .sm\:w-4\/12{
-    width: 33.333333%;
+  .sm\:w-10\/12{
+    width: 83.333333%;
   }
 
   .sm\:w-80{
     width: 20rem;
-  }
-
-  .sm\:w-10\/12{
-    width: 83.333333%;
   }
 
   .sm\:max-w-lg{
