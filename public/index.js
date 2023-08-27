@@ -284,8 +284,10 @@ var img4 = new Image();
 img4.src = "img/mobile_background.webp";
 
 var img5 = new Image();
-img5.src = "/img/stud7.webp";
+img5.src = "img/stud7.webp";
 
+var img6 = new Image();
+img6.src = "img/background.webp";
 
 
 function changeBackground() {
