@@ -966,8 +966,28 @@ video {
   overflow-y: auto;
 }
 
+.whitespace-normal{
+  white-space: normal;
+}
+
 .whitespace-nowrap{
   white-space: nowrap;
+}
+
+.whitespace-pre-wrap{
+  white-space: pre-wrap;
+}
+
+.whitespace-break-spaces{
+  white-space: break-spaces;
+}
+
+.break-words{
+  overflow-wrap: break-word;
+}
+
+.break-all{
+  word-break: break-all;
 }
 
 .rounded-3xl{
@@ -1151,6 +1171,11 @@ video {
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-12{
@@ -1414,16 +1439,12 @@ video {
     height: 18rem;
   }
 
-  .sm\:w-4\/12{
-    width: 33.333333%;
+  .sm\:w-10\/12{
+    width: 83.333333%;
   }
 
   .sm\:w-80{
     width: 20rem;
-  }
-
-  .sm\:w-10\/12{
-    width: 83.333333%;
   }
 
   .sm\:max-w-lg{
