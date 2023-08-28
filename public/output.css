@@ -966,24 +966,8 @@ video {
   overflow-y: auto;
 }
 
-.whitespace-normal{
-  white-space: normal;
-}
-
 .whitespace-nowrap{
   white-space: nowrap;
-}
-
-.whitespace-pre-wrap{
-  white-space: pre-wrap;
-}
-
-.whitespace-break-spaces{
-  white-space: break-spaces;
-}
-
-.break-words{
-  overflow-wrap: break-word;
 }
 
 .break-all{
@@ -1171,11 +1155,6 @@ video {
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .pb-12{
