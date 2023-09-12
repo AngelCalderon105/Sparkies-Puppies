@@ -89,59 +89,59 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-showClock();
-setInterval("showClock()",1000);
+// showClock();
+// setInterval("showClock()",1000);
 
-function showClock() {
-   let thisDay = new Date(); // returns current date   
-   let septDate = nextSept13(thisDay);
-   septDate.setHours(21);
+// function showClock() {
+//    let thisDay = new Date(); // returns current date   
+//    let septDate = nextSept13(thisDay);
+//    septDate.setHours(21);
     
-   var countDown = septDate - thisDay;
+//    var countDown = septDate - thisDay;
    
-   let dayCountDown = Math.floor(countDown / (1000 * 60 * 60 * 24)); 
-   let hourCountDown = Math.floor((countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-   let minCountDown = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
-   let secCountDown = Math.floor((countDown % (1000 * 60)) / 1000);
+//    let dayCountDown = Math.floor(countDown / (1000 * 60 * 60 * 24)); 
+//    let hourCountDown = Math.floor((countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//    let minCountDown = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
+//    let secCountDown = Math.floor((countDown % (1000 * 60)) / 1000);
     
-   document.getElementById("daysLeft").textContent = dayCountDown - 1;
-   document.getElementById("hoursLeft").textContent = hourCountDown + 2;
-   document.getElementById("minLeft").textContent = minCountDown;
-   document.getElementById("secLeft").textContent = secCountDown;
-}
+//    document.getElementById("daysLeft").textContent = dayCountDown - 1;
+//    document.getElementById("hoursLeft").textContent = hourCountDown + 2;
+//    document.getElementById("minLeft").textContent = minCountDown;
+//    document.getElementById("secLeft").textContent = secCountDown;
+// }
 
-function nextSept13(currentDate) {
-   var cYear = currentDate.getFullYear();
-   var sDate = new Date("September 13, 2023");
-   sDate.setFullYear(cYear);
-   if ((sDate - currentDate) < 0) sDate.setFullYear(cYear + 1);
-   return sDate;
-}
+// function nextSept13(currentDate) {
+//    var cYear = currentDate.getFullYear();
+//    var sDate = new Date("September 13, 2023");
+//    sDate.setFullYear(cYear);
+//    if ((sDate - currentDate) < 0) sDate.setFullYear(cYear + 1);
+//    return sDate;
+// }
 
 
-const formContainer = document.getElementById('form-container');
-const form = document.getElementById('reminderForm');
-const thankYouMessage = document.getElementById('thankYouMessage');
+// const formContainer = document.getElementById('form-container');
+// const form = document.getElementById('reminderForm');
+// const thankYouMessage = document.getElementById('thankYouMessage');
 
-document.getElementById('showFormBtn').addEventListener('click', function() {
-    form.classList.remove('hidden');
-    form.classList.add('flex','justify-center','items-center');
-});
+// document.getElementById('showFormBtn').addEventListener('click', function() {
+//     form.classList.remove('hidden');
+//     form.classList.add('flex','justify-center','items-center');
+// });
   
-document.getElementById('closeFormBtn').addEventListener('click', function() {
-    form.classList.add('hidden');
+// document.getElementById('closeFormBtn').addEventListener('click', function() {
+//     form.classList.add('hidden');
     
-});
+// });
   
-document.getElementById('closeFormBtn2').addEventListener('click', function() {
-    form.classList.add('hidden');
-    thankYouMessage.classList.add('hidden');
-    formContainer.classList.remove('hidden');
+// document.getElementById('closeFormBtn2').addEventListener('click', function() {
+//     form.classList.add('hidden');
+//     thankYouMessage.classList.add('hidden');
+//     formContainer.classList.remove('hidden');
 
-    formContainer.classList.add('flex');
+//     formContainer.classList.add('flex');
     
     
-});
+// });
 
 const statContainer = document.getElementById('statsContainer');
 const statBtn = document.getElementById('statsButton');
@@ -160,42 +160,59 @@ document.getElementById('statCloseBtn').addEventListener('click', function() {
 
   
 
-// const switchEl = document.getElementById('switch');
-// const puppiesEl = document.getElementById('puppies');
-// const parentsEl = document.getElementById('parents');
-// const puppiesPage = document.getElementById('puppies-page');
-// const parentsPages = document.getElementById('parents-page');
+const switchEl = document.getElementById('switch');
+const puppiesEl = document.getElementById('puppies');
+const parentsEl = document.getElementById('parents');
+const puppiesPage = document.getElementById('puppies-page');
+const parentsPages = document.getElementById('parents-page');
 
-// let isActive = false;
+let isActive = false;
 
-// switchEl.addEventListener('click', () => {
-//   if (isActive) {
-//     puppiesEl.classList.add('translate-x-0');
-//     puppiesEl.classList.remove('translate-x-24');
-//     puppiesEl.innerText = 'Puppies';
-//     puppiesPage.classList.remove('hidden');
-//     puppiesPage.classList.add('md:grid');
-//     parentsPages.classList.add('hidden');
-//   } else {
-//     puppiesEl.classList.add('translate-x-24');
-//     puppiesEl.classList.remove('translate-x-0');
-//     puppiesEl.innerText = 'Parents';
-//     puppiesPage.classList.remove('md:grid');
-//     puppiesPage.classList.add('hidden');
-//     parentsPages.classList.remove('hidden');
-//   }
-//   isActive = !isActive;
-// });
+switchEl.addEventListener('click', () => {
+  if (isActive) {
+    puppiesEl.classList.add('translate-x-0');
+    puppiesEl.classList.remove('translate-x-24');
+    puppiesEl.innerText = 'Puppies';
+    puppiesPage.classList.remove('hidden');
+    puppiesPage.classList.add('md:grid');
+    parentsPages.classList.add('hidden');
+  } else {
+    puppiesEl.classList.add('translate-x-24');
+    puppiesEl.classList.remove('translate-x-0');
+    puppiesEl.innerText = 'Parents';
+    puppiesPage.classList.remove('md:grid');
+    puppiesPage.classList.add('hidden');
+    parentsPages.classList.remove('hidden');
+  }
+  isActive = !isActive;
+});
 
 
-// var puppyGallerySettings = {
-//   focus: 'center',
-//   type: 'loop',
-//   autoplay: true,
-//   pauseOnHover: true,
-//   lazyLoad: 'nearby',
-  
-// };
+var puppyGallerySettings = {
+  focus: 'center',
+  type: 'loop',
+  autoplay: true,
+  height: '40rem',
+  pauseOnHover: true,
+  lazyLoad: 'nearby',
+  breakpoints: {
+    1024:{
+      height: '35rem'
+    },
+    768: {
+      height: '30rem',
+    },
+    640: {
+      height: '25rem',
+     
+    },
+    500: {
+      height: '15rem',
+
+    }
+
+  }
+};
 
 var mainGallerySettings = {
   focus: 'center',
@@ -235,26 +252,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //collects all Galleries
-// const gallery = document.querySelectorAll('.puppyGallery');
-// const openGalleryBtn = document.querySelectorAll('.openBtn');
-// const closeGalleryBtn = document.querySelectorAll('.closeBtn');
-// const galleryContainer = document.querySelectorAll('.galleryContainer');
+const gallery = document.querySelectorAll('.puppyGallery');
+const openGalleryBtn = document.querySelectorAll('.openBtn');
+const closeGalleryBtn = document.querySelectorAll('.closeBtn');
+const galleryContainer = document.querySelectorAll('.galleryContainer');
 
-// for ( let i = 0; i < gallery.length; i++ ) {
-//   new Splide(gallery[i], puppyGallerySettings).mount();
-// }
+for ( let i = 0; i < gallery.length; i++ ) {
+  new Splide(gallery[i], puppyGallerySettings).mount();
+}
 
-// openGalleryBtn.forEach(function(btn, index) {
-//   btn.addEventListener('click', () => {
-//   galleryContainer[index].classList.remove('hidden');
-//   })
-// });
+openGalleryBtn.forEach(function(btn, index) {
+  btn.addEventListener('click', () => {
+  galleryContainer[index].classList.remove('hidden');
+  })
+});
 
-// closeGalleryBtn.forEach(function(btn, index) {
-//   btn.addEventListener('click', () => {
-//   galleryContainer[index].classList.add('hidden');
-//   })
-// });
+closeGalleryBtn.forEach(function(btn, index) {
+  btn.addEventListener('click', () => {
+  galleryContainer[index].classList.add('hidden');
+  })
+});
 
 
 let imageIndex = 0;
