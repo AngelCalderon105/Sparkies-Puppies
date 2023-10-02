@@ -190,11 +190,8 @@ switchEl.addEventListener('click', () => {
 
 var puppyGallerySettings = {
   focus: 'center',
-  type: 'loop',
-  autoplay: true,
   height: '40rem',
   pauseOnHover: true,
-  lazyLoad: 'nearby',
   breakpoints: {
     1024:{
       height: '35rem'
