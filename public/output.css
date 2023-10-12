@@ -970,6 +970,10 @@ video {
   white-space: nowrap;
 }
 
+.break-all{
+  word-break: break-all;
+}
+
 .rounded-3xl{
   border-radius: 1.5rem;
 }
@@ -1538,6 +1542,10 @@ video {
 
   .md\:w-3\/5{
     width: 60%;
+  }
+
+  .md\:w-4\/12{
+    width: 33.333333%;
   }
 
   .md\:w-7\/12{
