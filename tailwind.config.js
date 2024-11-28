@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.{html,js}"],
+  corePlugins:{
+    appearance: false,
+  },
   theme: {
     extend: {
       transitionDelay: {
