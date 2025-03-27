@@ -1,6 +1,6 @@
 # Steph's Puppies
 
-**Project Link:** [Live Website](https://sparkies-puppies.vercel.app/)
+**Project Link:** [Live Website](stephs-puppies.vercel.app/)
 
 ## Project Overview
 
